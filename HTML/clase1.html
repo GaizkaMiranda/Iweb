@@ -1,0 +1,83 @@
+ckb<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- diferencia entre put y get -->
+        <!-- el label no es obligatorio, en el for ha que poner el campo al que este asociado-->
+        <form action="form.php" method="post">
+            Nombre: <input type="text"><br>
+            Contraseña< input type="password"><br>
+            <input type="checkbox" name="moto" value="Moto">Tengo moto<br>
+            <input type="checkbox" name="coche" value="Coche"> Tengo coche<br>
+            <input type="radio" name="genero" value="hombre" checked> Hombre<br>
+            <input type="radio" name="genero" value="mujer"> Mujer<br>
+            <input type="radio" name="genero" value="otro"> Otro<br>
+            <input type="submit" value="Enviar">
+           </form>
+            <!-- checkbox -->
+            <label for="campo-contraseña">Contraseña:</label>
+            <input id="campo-contraseña" type="password" name="contraseña"><br>
+            <input type="checkbox" name="moto"value="1" Tengo  moto> <br>>
+
+            <input type="radio">
+            <!-- cuando hagamos select tiene que haber despues option -->
+            <!-- el option group es para agruar las opciones -->
+            <select id="groups" name="groups"> Select
+                <optgroup label="fruits">
+                <option>Banana</option>
+                <!-- falta poner los values, ahora solo está el string-->
+                <option selected>Cherry</option>
+                <option>Lemon</option>                         
+                </optgroup>
+                <optgroup label="vegetables">
+                <option>Carrot</option>
+                <option>Eggplant</option>
+                <option>Potato</option>
+                </optgroup>
+               </select>
+
+               <textarea name="textarea" rows="10"
+                cols="50">aqui va el texto</textarea>
+
+
+
+
+                <!-- ESTRUCTURA -->
+                <form> Estructura
+                    <ul>
+                     <li>
+                     <label for="t1">
+                     <input type="radio" id="t1" name="r1" value="1"/>
+                     Mayor de edad
+                     </ label>
+                     </li>
+                     <li>
+                     <label for="t1">
+                     <input type="radio" id="r2" name="r1" value="0"/>
+                     Menor de edad
+                     </label>
+                     </li>
+                     </ul>
+                     <p>
+                    <label for="name">
+                     <span>Nombre: </ span>
+                     <input type="text" id="name" name="nombre"/>
+                    </label>
+                     </p>
+                     </form>
+
+
+
+
+
+               
+       
+    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

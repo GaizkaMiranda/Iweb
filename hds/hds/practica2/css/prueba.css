@@ -1,0 +1,39 @@
+h3 {
+    text-decoration: underline;
+    text-shadow: salmon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-shadow: 1c;
+    font-size: xx-large;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+}
+
+body {
+    background-color: azure;
+    border-color: black;
+}
+
+fieldset {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ol {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    list-style-type: circle;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    text-align: left;
+    float: center;
+}

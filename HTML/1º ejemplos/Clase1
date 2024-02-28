@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!--Comentario-->
+    <!-- Para meter una foto, entrar en la web y copiar enlace-->
+        <!-- lemento de tipo bloque como contenedor 
+            de otros elementos-->
+        <div style = "background-color: blue;">
+            <ol>
+        <li> Primer elemento / <li>
+        <li> Automatización I<li>
+        <li> Estadistica / <li>
+
+            <ol>
+
+    <h1> > Primera clase de HTML </h1>
+    <h2> Grado en Industria Digital </h2>
+    <p>
+</body>
+</html>

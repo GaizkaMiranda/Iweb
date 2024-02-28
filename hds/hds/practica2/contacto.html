@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1: Datos de contacto</title>
+    <link rel="icon" href="img/descarga.png">
+    <link rel="stylesheet" type="text/css" href="css/prueba.css">
+</head>
+
+<header><img src="img/deusto.jpg" alt="" width="180" height="105"></header>
+<body>
+    
+    <h3><strong>Universidad de Deusto</strong></h3>
+
+    <fieldset>
+        <legend><strong>¿Dónde estamos?</strong></legend>
+        <ol>
+            <li><a href="index.html" target="_self">Inicio</a></li>
+            <li><a href="descripcion.html" target="_blank">Descripción del centro</a></li>
+            <li><a href="proyectos.html" target="_blank">Proyectos del centro</a></li>
+            <li><a href="ubicacion.html" target="_blank">¿Dónde estamos?</a></li>
+            <li><a href="cursos.html" target="_blank">Cursos</a></li>
+        </ol>
+        <h3><strong>Formulario para registrarse</strong></h3>
+
+        <form action="/my-handling-form-page" method="post">
+            <fieldset>
+                <legend>Rellene los siguientes campos</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Nombre:</label></td>
+                        <td><input type="text" id="name" name="user_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tlf">Teléfono:</label></td>
+                        <td><input type="text" id="tlf" name="tlf"></td>
+                    </tr>
+                    <tr>
+
+                        <td>Selecciona el campus</td>
+                        <td>
+                            <select name="centros" id="centros">
+                                <option value="VIT">Vitoria-Gasteiz</option>
+                                <option value="BIL">Bilbo</option>
+                                <option value="DON">Donosti</option>
+                                <option value="MON">Arrasate</option>
+                                <option value="EIB">Eibar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mensaje">Mensaje:</label></td>
+                        <td><textarea name="Mensaje" id="mensaje" cols="30" rows="10"
+                                placeholder="Escriba su consulta con más detalle"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="politica">Acepto la política de privacidad</label></td>
+                        <td><input type="checkbox" id="politica" name="politica"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <input type="submit" name="Enviar" id="Enviar">
+        </form>
+
+        <p>Aparte, adjuntamos nuestros datos de contacto</p>
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="Nombre">Nombre: </label></td>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="Deusto"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email de contacto: </label></td>
+                    <td><input type="" name="email" id="email" placeholder="info@deusto.es"></td>
+                </tr>
+                <tr>
+                    <td><label for="tlf">Teléfono de contacto: </label></td>
+                    <td><input type="text" name="tlf" id="tlf" placeholder="677372764"></td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </fieldset>
+    <hr>
+</body>
+
+<footer>
+    <span>Para más información haga click en el siguiente </span>
+    <a href="https://empleo.mcdonalds.es/">enlace</a>
+</footer>
+
+</html>

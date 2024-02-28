@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Reserva de sociedad</h1>
+    <p>Rellena el siguiente formulario para reservar la sociedad para un día en concreto</p>
+
+    <form action="">
+        <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name">
+            <br>
+            <p>Eres socio?</p>
+            <input type="radio" id="socio" name="user_name">Sí, soy socio
+            <input type="radio" id="socio" name="user_name">No soy socio
+            <br><br>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail">
+            <br><br>
+            <label for="passw">Contraseña:</label>
+            <input type="password" name="pasw"></input>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="edad">Edad:</label>
+            <select id="edad" name="edad"> Select
+                <option selected>Menor de 18 años</option>
+                <option>Entre 18 y 65</option>
+                <option>Mayor de 65</option>
+            </select>
+            <br>
+            <p>
+                Selecciona fecha y hora de reserva:
+            </p>
+            <label for="date"></label>
+            <input type="date" name="date"></input>
+            <label for="hora"></label>
+            <input type="time" name="time"></input>
+            <br><br>
+            <textarea name="Comentarios" id="com" cols="30" rows="10" placeholder="Comentarios"></textarea>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="condiciones" id="cond">Acepto las condiciones
+        <br>
+        <br>
+        <input type="submit" name="Enviar" id="Enviar">
+        <input type="reset" name="Borrar" id="Borrar">
+    </form>
+
+</body>
+
+</html>
