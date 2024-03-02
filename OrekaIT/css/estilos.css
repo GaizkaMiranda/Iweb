@@ -1,0 +1,210 @@
+/* estilos.css */
+
+body {
+    background-color: white;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: 'Roboto', sans-serif; /* Establece la fuente predeterminada */
+}
+
+/* dfsdjfhsd kjfhsdkfhsdkjfh*/
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos básicos */
+.navbar {
+    background: linear-gradient(to right, white, white); /* Degradado de izquierda a derecha */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a, .navbar select {
+    padding: 10px;
+    font-size: 16px; /* Ajusta esto según el tamaño de fuente deseado para el menú */
+    vertical-align: middle;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(89, 99, 194, 0.2); /* Efecto hover mejorado */
+    color: black;
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+    .nav-links li {
+        float: none;
+    }
+}
+
+.navbar select {
+    background-color: white; /* Coincide con el color de fondo del menú */
+    color: black; /* Coincide con el color del texto del menú */
+    border: 1px solid #ccc; /* Borde sutil para el selector */
+    border-radius: 5px; /* Bordes redondeados para coincidir con el estilo general */
+    margin-left: 20px; /* Espacio entre el selector y el último enlace del menú */
+    cursor: pointer; /* Indica que el selector es interactivo */
+}
+
+@media screen and (max-width: 600px) {
+    .navbar select {
+        width: 100%; /* Asegura que el selector ocupe el ancho disponible */
+    }
+    .nav-links li, .language-switch {
+        float: none; /* Disposición vertical en móviles */
+        text-align: center; /* Centrado de texto en móviles */
+    }
+}
+
+/* Zona del CSS del footer */
+
+.site-footer {
+    background-color: white; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.site-footer .container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* mantener el footer en la parte inferior de la página, incluso con poco contenido: */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > .container {
+    flex: 1;
+}
+
+.central, .site-footer, iframe{
+    margin: 0 auto;
+
+}
+
+.central p {
+    font-weight: 500;
+    
+}
+
+/* estilos.css */
+
+/* Estilos para la clase "central" */
+.central {
+    max-width: 800px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade espaciado interno alrededor del contenido */
+    background-color: #f9f8fc; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para la clase "central" dentro de la página de detalles del proyecto */
+.central.detalle-proyecto {
+    background-color: #f5f5f5; /* Cambia el color de fondo para distinguirlo */
+}
+
+/* Estilos para la tabla de proyectos */
+.central table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.central table th, .central table td {
+    border: 1px solid #ddd; /* Borde sólido gris claro */
+    padding: 8px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.central table th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas del encabezado */
+}
+
+.central table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+/* Estilos para los enlaces dentro de la tabla de proyectos */
+.central table a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #007bff; /* Color azul para los enlaces */
+}
+
+.central table a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
+
+
+/* imagen */
+/* .logo {
+
+} */
+
+
+
+/* PADRE */
+.primero {
+    position: relative; /* Establece la posición relativa */
+}
+
+/* Estilos para el pseudo-elemento ::after de .primero */
+.primero::before,
+.primero::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posición absoluta */
+    bottom: 0; /* Alinea la línea horizontal en la parte inferior */
+    left: 0; /* Alinea la línea horizontal al extremo izquierdo */
+    width: 100%; /* Ancho completo */
+    height: 1px; /* Grosor de la línea horizontal */
+    background-color: #ccc; /* Color de la línea horizontal */
+}
+
+primero::before {
+    top: 0; /* Alinea la línea horizontal en la parte superior */
+}
+
+/* Estilos para el pseudo-elemento ::after de .primero */
+.primero::after {
+    bottom: 0; /* Alinea la línea horizontal en la parte inferior */
+}
+
+/* HIJO Nº1 */
+.unouno{
+
+}
+
+/* HIJO Nº2 */
+.unodos{
+
+}
