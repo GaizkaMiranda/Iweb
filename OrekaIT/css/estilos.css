@@ -212,7 +212,13 @@ primero::before {
 }
 
 
-.product:hover {
+.product {
+    
+      margin-top: 7rem;
+    text-align: center;
+}
+
+.product:hover{
     background-color: #037bc0;
     color: white;
     border-bottom-right-radius: 1rem;
@@ -324,6 +330,11 @@ H22 S4HANA{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.contact-form {
+    background-image: url('fondo.png');
+    background-size: cover;
 }
 
 /*  
