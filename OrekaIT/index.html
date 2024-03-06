@@ -48,47 +48,47 @@
         
         <p> Intarex ahora es Oreka</p>
 
-        <p> Desde 02/2024</p>
+        <p> Desde Febrero del 2024</p>
 
-        <p> Aqui tu zona central</p>
-
-        <p> Aqui tu zona central</p>
+        
 
     </div>
 
   
-
-
-<h2>¿Quieres formar parte de Oreka?</h2>
-<h2>Mándanos tu CV</h2>
-
-<form action="/submit_form" method="post" >
-    <label for="Telefono">Teléfono de contacto:</label>
-    <input type="text" id="nombre" name="nombre"><br><br>
+    <div class="form_container">
+        <video autoplay muted loop class="form_video">
+            <source src="img/Curriculum-Vitae.webp" type="video/mp4">
+            
+        </video>
+        <h2 class="form_title">¿Quieres formar parte de Orek IT?</h2>
+        <h2 class="form_title">Mándanos tu CV</h2>
     
-    <label for="suscripcion">Suscribirse al boletín:</label>
-    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si"><br><br>
+        <form action="/submit_form" method="post" class="form_form">
+            <label for="Telefono" class="form_label">Teléfono de contacto:</label>
+            <input type="text" id="nombre" name="nombre" class="form_input"><br><br>
     
+            <label for="suscripcion" class="form_label">Acepto la política de privacidad de Oreka IT </label>
+            <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox"><br><br>
     
+            <label for="dep" class="form_label">Departamento:</label>
+            <select id="dep" name="dep" class="form_select">
+                <option value="sis">Sistemas</option>
+                <option value="B1">Business One</option>
+                <option value="An">Analytics</option>
+                <option value="DH">Data Hunting</option>
+                <option value="Ad">Administración</option>
+                <option value="RRHH">Recursos humanos</option>
+            </select><br><br>
     
-    <label for="dep">Departamento:</label>
-    <select id="dep" name="dep">
-        <option value="sis">Sistemas</option>
-        <option value="B1">Business One</option>
-        <option value="An">Analytics</option>
-        <option value="DH">Data Hunting</option>
-        <option value="Ad">Administración</option>
-        <option value="RRHH">Recursos humanos</option>
-    </select><br><br>
+            <label for="Comentario" class="form_label">Comentario:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea><br><br>
     
-    <label for="Comentario">Comentario:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+            <label for="pdf" class="form_label">Adjuntar PDF:</label>
+            <input type="file" id="pdf" name="pdf" class="form_input"><br><br>
     
-    <label for="pdf">Adjuntar PDF:</label>
-    <input type="file" id="pdf" name="pdf"><br><br>
-
-    <input type="submit" value="Enviar">
-</form>
+            <input type="submit" value="Enviar" class="form_submit">
+        </form>
+    </div>
 
 </body>
 
