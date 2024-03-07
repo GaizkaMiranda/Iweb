@@ -352,3 +352,25 @@ a {
     margin-top: 5rem;
     text-align: center;
 }
+
+.noticias {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos equitativamente en el espacio disponible */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.noticia1,
+.noticia2 {
+    flex-basis: 45%; /* Ancho máximo de cada noticia */
+}
+
+.noticia1 img,
+.noticia2 img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.noticia1:hover img,
+.noticia2:hover img {
+    opacity: 0; /* Oculta la imagen al pasar el ratón por encima */
+}
