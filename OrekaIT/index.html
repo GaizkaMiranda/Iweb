@@ -62,31 +62,37 @@
         <h2 class="form_title">¿Quieres formar parte de Orek IT?</h2>
         <h2 class="form_title">Mándanos tu CV</h2>
     
-        <form action="/submit_form" method="post" class="form_form">
-            <label for="Telefono" class="form_label">Teléfono de contacto:</label>
-            <input type="text" id="nombre" name="nombre" class="form_input"><br><br>
-    
-            <label for="suscripcion" class="form_label">Acepto la política de privacidad de Oreka IT </label>
-            <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox"><br><br>
-    
-            <label for="dep" class="form_label">Departamento:</label>
-            <select id="dep" name="dep" class="form_select">
-                <option value="sis">Sistemas</option>
-                <option value="B1">Business One</option>
-                <option value="An">Analytics</option>
-                <option value="DH">Data Hunting</option>
-                <option value="Ad">Administración</option>
-                <option value="RRHH">Recursos humanos</option>
-            </select><br><br>
-    
-            <label for="Comentario" class="form_label">Comentario:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea><br><br>
-    
-            <label for="pdf" class="form_label">Adjuntar PDF:</label>
-            <input type="file" id="pdf" name="pdf" class="form_input"><br><br>
-    
-            <input type="submit" value="Enviar" class="form_submit">
-        </form>
+        <div class="form-container">
+            <form action="/submit_form" method="post" class="form_form">
+                <label for="Telefono" class="form_label">Teléfono de contacto:</label>
+                <input type="text" id="nombre" name="nombre" class="form_input"><br><br>
+        
+                <label for="suscripcion" class="form_label">Acepto la política de privacidad de Oreka IT </label>
+                <div class="form_checkbox_container">
+                    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
+                </div>
+                
+        
+                <label for="dep" class="form_label">Departamento:</label>
+                <select id="dep" name="dep" class="form_select">
+                    <option value="sis">Sistemas</option>
+                    <option value="B1">Business One</option>
+                    <option value="An">Analytics</option>
+                    <option value="DH">Data Hunting</option>
+                    <option value="Ad">Administración</option>
+                    <option value="RRHH">Recursos humanos</option>
+                </select><br><br>
+        
+                <label for="Comentario" class="form_label">Comentario:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea><br><br>
+        
+                <label for="pdf" class="form_label">Adjuntar PDF:</label>
+                <input type="file" id="pdf" name="pdf" class="form_input"><br><br>
+        
+                <input type="submit" value="Enviar" class="form_submit">
+            </form>
+        </div>
+        
     </div>
 
 </body>
@@ -99,7 +105,7 @@
 
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 
