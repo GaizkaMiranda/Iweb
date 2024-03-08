@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP SuccessFactors HXM Suite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HXM: la evolución del software HCM</h1>
+            <p>Todo lo relativo al trabajo está cambiando. HCM tradicional ya no es suficiente. Con SAP SuccessFactors Human Experience Management Suite, usted puede poner a su personal en el centro de todo –creando experiencias potenciadas por IA que impulsen una ventaja competitiva real–.</p>
+        </div>
+        <div class="content">
+            <h2>SAP SuccessFactors HXM Suite</h2>
+            <p>Potente software de RR. HH. en la nube que empodera a los individuos para que alcancen todo su potencial en el trabajo a la vez que fortalece la conexión de la función de RR. HH. en toda la empresa.</p>
+            <h3>Explore nuestras soluciones</h3>
+            <ul>
+                <li>Experiencias diseñadas para el modo de trabajar de las personas</li>
+                <li>Comprenda a su personal al escuchar sus necesidades y tomar las medidas correctas para mejorar la experiencia del colaborador.</li>
+                <li>Inteligencia de talento para impulsar la movilidad a escala</li>
+                <li>Alinee automáticamente el talento con las oportunidades que reflejan a la persona completa de cada individuo, no solo sus habilidades.</li>
+                <li>Compliance automatizado para tener tranquilidad</li>
+                <li>Adáptese a las siempre cambiantes regulaciones gracias al acceso a soluciones para RR. HH. localizadas para más de 100 países.</li>
+            </ul>
+        </div>
+        <div class="cta">
+            <a href="#">Descubre más</a>
+        </div>
+    </div>
+</body>
+</html>

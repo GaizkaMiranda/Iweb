@@ -23,7 +23,6 @@
                     <li><a href="nosotros.html">Sobre Nosotros</a></li>
                     <li><a href="productos.html">Productos/Servicios</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="Noticias.html">Noticias</a></li>
 
                     <li class="language-switch">
                         <select class="language-switch" onchange="location = this.value;">
@@ -50,10 +49,10 @@
         <h2>Contacto</h2>
         <div class="contact-info">
             <!-- Información de contacto -->
-            <p><strong>Dirección:</strong> Calle Principal, 123, Ciudad, País</p>
+            <p><strong>Dirección:</strong> Calle Guachupa, 14, Vitoria-Gasteiz, Euskal herria</p>
             <p><strong>Teléfono:</strong> +34 123 456 789</p>
-            <p><strong>Correo Electrónico:</strong> info@catastor.com</p>
-            <p><strong>Horario:</strong> Lunes a Viernes: 9:00 - 17:00</p>
+            <p><strong>Correo Electrónico:</strong> info@orekait.com</p>
+            <p><strong>Horario:</strong> Lunes a Viernes: 8:00 - 18:00</p>
         </div>
 
         <div class="contact-form">
@@ -76,13 +75,25 @@
             </form>
         </div>
 
-        <div class="map-container">
-        </div>
+        
     </div>
 
     <footer class="site-footer">
-        <!-- Información adicional del pie de página -->
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector('.contact-form form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevenir el envío del formulario por defecto
+                // Aquí puedes agregar cualquier lógica adicional, como enviar los datos del formulario a un servidor mediante AJAX
+                // Por ahora, simplemente mostraremos un mensaje de agradecimiento
+                alert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo pronto.');
+                form.reset(); // Limpiar el formulario después de enviar
+            });
+        });
+    </script>
+    
 
 </body>
 
