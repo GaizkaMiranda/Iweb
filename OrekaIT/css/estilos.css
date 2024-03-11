@@ -36,9 +36,11 @@ img {
     margin-top: 20px; /* Agrega margen superior al formulario */
 }
 
-.form_label {
+.privacidad , .depart, .coment, .adjuntar, .telefono{
+    color: #000407;
     display: block; /* Hace que las etiquetas de formulario sean bloques para ocupar todo el ancho */
     margin-bottom: 5px; /* Agrega espacio entre etiquetas y campos */
+    font-size: 25px;
 }
 
 .form_checkbox_container {
@@ -246,16 +248,16 @@ primero::before {
 }
 
 
-.central1 {
-    background-image: url('/OrekaIT/img/IntarexOreka.png');
-    background-repeat: no-repeat;
-    background-size: contain; /* Cambiado a 'contain' para ajustar la imagen dentro del contenedor */
-    background-position: center center;
+.central19 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px; /* Añadir espacio alrededor del contenido */
     height: 300px; /* Ajustar la altura del contenedor */
     width: 80%; /* Ajustar el ancho del contenedor */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
 }
+
 
 
 .product {
@@ -328,15 +330,12 @@ H22 S4HANA{
             transition: background-color 0.3s ease;
 }
 
-.form_title {
-    color: #333;
+.cv {
+    color: #030303; /* Cambia el color del texto a negro */
+    font-size: 28px; /* Ajusta el tamaño de fuente a tu preferencia */
 }
 
-.form_label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-}
+
 
 .form_input {
     padding: 8px;
@@ -538,3 +537,116 @@ button:hover {
     margin: 0 auto; /* se centra la imagen horizontalmente */
 }
 
+.fondoformulario {
+    background-image: url('https://media.istockphoto.com/id/1204523406/photo/sap-system-software-automation-concept-on-virtual-screen-data-center-business-modern.jpg?s=612x612&w=0&k=20&c=SFhlf-gYEQUhZ5O3VVYqFEoqE9s-1Pvmwo0sAuEGKBo=');
+    background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.92;   /* le ajustamos la transparencia */
+}
+
+
+/* ----- FOOTER(común) ----- */
+
+footer {
+    background-color: #9b0d59; /* Cambia el color de fondo a rosa */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 50px 0;
+}
+
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.footerColumn {
+    flex-basis: 30%;
+    color: white;
+    
+}
+
+.footerColumn h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footerColumn ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footerColumn li {
+    margin-bottom: 15px;
+}
+
+.footerColumn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------- */
+
+.footerColumn .satisfaccion a {
+    display: inline-block;
+    text-decoration: none;
+    /* BORRA EL SUBRAYDAO Q VIENE X DEFECTO */
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #0a141d;
+    text-align: center;
+    transition: all 300ms ease;
+    
+
+}
+
+
+.footerColumn .redSocial a {
+    color: aqua;
+    /* COLOR IMAGENES(tw, inst, yt) */
+
+}
+
+
+/* BARRA HORIZONTAL ABAJO DEL HEADER */
+.copyright {
+    background-color: #282727;
+    padding: 15px 10px;
+    /*PARA QUE SEA HORIZONTAL LA BARRA */
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    
+  }
+  
+  .contenido {
+    max-width: 600px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrar horizontalmente */
+  }
+  
+  img {
+    max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
+  }
