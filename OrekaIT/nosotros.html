@@ -26,8 +26,8 @@
                     <li class="language-switch">
                         <select class="language-switch" onchange="location = this.value;">
                             <option value="index.html">Español</option>
-                            <option value="index_eus.html">Euskera</option>
-                            <option value="index_eng.html">English</option>
+                            <option value="eus/index_eus.html">Euskera</option>
+                            <option value="eng/index_eng.html">English</option>
                         </select>
                     </li>
                 </ul>
@@ -41,34 +41,34 @@
 <body>    
 
     <!-- En la sección "Sobre nosotros" -->
-    <div class="proyectos">
-        <h2>Proyectos</h2>
+    <div class="disponibilidad">
+        <h2>Disponibilidad</h2>
         <table>
             <tr>
-                <th>Nombre del Proyecto</th>
-                <th>Fecha de Inicio</th>
-                <th>Fecha de Fin</th>
+                <th>Día</th>
+                <th>Hora apertura</th>
+                <th>Hora cierre</th>
                 <th>Detalles</th>
             </tr>
-            <tr>
-                <td>Proyecto A</td>
-                <td>01/01/2024</td>
-                <td>31/12/2024</td>
+            <tr class="contenidotabla">
+                <td>Lunes-miércoles</td>
+                <td>7:00</td>
+                <td>18:00</td>
                 <td><a href="proyecto_a.html">Ver detalles</a></td>
             </tr>
-            <tr>
-                <td>Proyecto B</td>
-                <td>15/02/2024</td>
-                <td>30/06/2024</td>
+            <tr class="contenidotabla">
+                <td>jueves</td>
+                <td>7:30</td>
+                <td>18:00</td>
                 <td><a href="proyecto_b.html">Ver detalles</a></td>
             </tr>
-            <tr>
-                <td>Proyecto C</td>
-                <td>10/03/2024</td>
-                <td>20/09/2024</td>
+            <tr class="contenidotabla">
+                <td>viernes</td>
+                <td>8:00</td>
+                <td>15:00</td>
                 <td><a href="proyecto_c.html">Ver detalles</a></td>
             </tr>
-            <!-- Agregar más filas para más proyectos -->
+        
         </table>
     </div>
     
@@ -81,7 +81,7 @@
             <p><strong>Fecha de Fin:</strong> 01/12/2024</p>
             <p><strong>Contrato:</strong> A</p>
             <p><strong>Descripción:</strong> Implantación SAP para la gestión de gastos y producción de la empresa</p>
-            <img src="img/mercedes.jpg" alt="">
+            <img src="img/mercedes.jpg" alt="mercedes">
         </div>
         <div class="cl2">
             <h2>Proyecto Kaiku</h2>
@@ -89,15 +89,15 @@
             <p><strong>Fecha de Fin:</strong> 31/01/2022</p>
             <p><strong>Contrato:</strong> B+</p>
             <p><strong>Descripción:</strong> Implantación y mantenimiento SAP Business One durante dos años</p>
-            <img src="img/Kaiku_Logo.png" alt="">
+            <img src="img/Kaiku_Logo.png" alt="Kaiku">
         </div>
         <div class="cl1">
-            <h2>Detalles del Proyecto A</h2>
+            <h2>Eusko Jaurlaritza</h2>
             <p><strong>Fecha de Inicio:</strong> 01/01/2024</p>
             <p><strong>Fecha de Fin:</strong> 31/12/2024</p>
             <p><strong>Contrato:</strong> F</p>
             <p><strong>Descripción:</strong> Implantación y formación técnico de la plantilla</p>
-            <img src="img/logo-gobierno-vasco.jpg" alt="">
+            <img src="img/logo-gobierno-vasco.jpg" alt="logo-gobierno-vasco">
         </div>
     </div>
     
@@ -107,10 +107,10 @@
 
 
 <div class="contenedor">
-<div class="contenedor-nosotros">
+ <div class="contenedor-nosotros">
     <div class="card" style="background-image: url('/OrekaIT/img/oficinadonosti.jpg')">
         <div class="textos">
-            <h3>Nueva oficina de Donosti</h3>
+            <h3>Nueva oficina de Donosti </h3>
         </div>
     </div>
     <div class="card" style="background-image: url('/OrekaIT/img/plantillaa.jpg')">
@@ -120,8 +120,7 @@
     </div>
     <div class="card" style="background-image: url('/OrekaIT/img/etekin.jpg')">
         <div class="textos">
-            <h3>Etekin</h3>
-            <p>Soporte para PYMES</p>
+           
         </div>
     </div>
 
@@ -132,7 +131,7 @@
         </div>
     </div>
     <div >
-    
+    <div>
 
 
         <footer>
@@ -161,10 +160,10 @@
                     <!-- COLUMNA DE LA DERECHA -->
                     <h3>Nivel de satisfacción con nuestra web</h3>
                     <div class="satisfaccion">
-                        <a class="fa fa-facebook"> <img src="img/muymal.jpg" alt=""></a>
-                        <a  class="fa fa-instagram"><img src="img/regular.jpg" alt=""></a>
-                        <a  class="fa fa-twitter"><img src="img/bien.jpg" alt=""></a>
-                        <a  class="fa fa-linkedin"><img src="img/muybien.jpg" alt=""></a>
+                        <a class="muymal"> <img src="img/muymal.jpg" alt=""></a>
+                        <a  class="regular"><img src="img/regular.jpg" alt=""></a>
+                        <a  class="bien"><img src="img/bien.jpg" alt=""></a>
+                        <a  class="muybien"><img src="img/muybien.jpg" alt=""></a>
                     </div>
                 </div>
             </div>

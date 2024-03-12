@@ -1,77 +1,175 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Oreka IT</title>
+    <title>Oreka IT- Guri Buruz</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
-<body>
-    <header>
-        <img src="img/logo.jpg" alt="OrekaIT">
-    </header>
+<header>
+    <div class="lehenengo"> <!-- AITA -->
+        <div class="bat-bat"> <!-- HAURRA No.1-->
+            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+        </div>
+        
+        <div class="bat-bi">
+            <nav class="navbarra">
+                <ul class="nabigazio-estekak">
+                    <li><a href="index.html">Hasiera</a></li>
+                    <li><a href="guri.html">Guri buruz</a></li>
+                    <li><a href="produktuak.html">Produktuak/Zerbitzuak</a></li>
+                    <li><a href="kontaktua.html">Kontaktua</a></li>
 
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Hasiera</a></li>
-            <li><a href="nosotros.html">Guri buruz</a></li>
-            <li><a href="productos.html">Produktu/Serbitzuak</a></li>
-            <li><a href="contacto.html">Kontaktua</a></li>
-            <li class="language-switch">
-                <select class="language-switch" onchange="location = this.value;">
-                    <option value="index.html">Español</option>
-                    <option value="index_eus.html">Euskera</option>
-                    <option value="index_eng.html">English</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
+                    <li class="hizkuntza-aldaketa">
+                        <select class="language-switch" onchange="location = this.value;">
+                            <option value="index.html">Espainiera</option>
+                            <option value="eus/index_eus.html">Euskara</option>
+                            <option value="eng/index_eng.html">Ingelesa</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
-    <!-- Sobre guri atalean -->
-    <div class="central">
-        <h2>Proiektuak</h2>
+
+
+<body>    
+
+    <!-- "Guri buruz" atalean -->
+    <div class="erabilgarritasuna">
+        <h2>Erabilgarritasuna</h2>
         <table>
             <tr>
-                <th>Proiektuaren Izena</th>
-                <th>Hasi Data</th>
-                <th>Amaitu Data</th>
+                <th>Eguna</th>
+                <th>Irekitze ordutegia</th>
+                <th>Itxi ordutegia</th>
                 <th>Xehetasunak</th>
             </tr>
-            <tr>
-                <td>A Proiektua</td>
-                <td>2024/01/01</td>
-                <td>2024/12/31</td>
-                <td><a href="proiektua_a.html">Xehetasunak ikusi</a></td>
+            <tr class="taula-edukia">
+                <td>Astelehena-asteazkena</td>
+                <td>7:00</td>
+                <td>18:00</td>
+                <td><a href="proyecto_a.html">Xehetasunak ikusi</a></td>
             </tr>
-            <!-- Gehitu gehiago proiektuakentzako errenkaden -->
+            <tr class="taula-edukia">
+                <td>Osteguna</td>
+                <td>7:30</td>
+                <td>18:00</td>
+                <td><a href="proyecto_b.html">Xehetasunak ikusi</a></td>
+            </tr>
+            <tr class="taula-edukia">
+                <td>Ostirala</td>
+                <td>8:00</td>
+                <td>15:00</td>
+                <td><a href="proyecto_c.html">Xehetasunak ikusi</a></td>
+            </tr>
+        
         </table>
     </div>
+    
 
-    <!-- Proiektuaren xehetasun orrialdea (proiektua_a.html) -->
-    <div class="central">
-        <h2>A Proiektuaren Xehetasunak</h2>
-        <p><strong>Hasi Data:</strong> 2024/01/01</p>
-        <p><strong>Amaitu Data:</strong> 2024/12/31</p>
-        <p><strong>Bezeroa:</strong> Mercedes</p>
-        <p><strong>Deskribapena:</strong> Proiektuaren xehetasun zehatzak...</p>
-        <!-- Gehitu gehiago proiektuaren xehetasun zehatzak -->
+
+    <div class="proiektuak-kontainerra">
+        <div class="kl1">
+            <h2>Mercedes Proiektua</h2>
+            <p><strong>Hasiera data:</strong> 2023/01/01</p>
+            <p><strong>Amaitze data:</strong> 2024/12/01</p>
+            <p><strong>Kontratua:</strong> A</p>
+            <p><strong>Deskribapena:</strong> Enpresaren gastu eta produkzioaren kudeaketarako SAP inplanteazioa</p>
+            <img src="img/mercedes.jpg" alt="mercedes">
+        </div>
+        <div class="kl2">
+            <h2>Kaiku Proiektua</h2>
+            <p><strong>Hasiera data:</strong> 2020/01/01</p>
+            <p><strong>Amaitze data:</strong> 2022/01/31</p>
+            <p><strong>Kontratua:</strong> B+</p>
+            <p><strong>Deskribapena:</strong> Bi urteetako SAP Business One inplanteazioa eta mantentzea</p>
+            <img src="img/Kaiku_Logo.png" alt="Kaiku">
+        </div>
+        <div class="kl1">
+            <h2>Eusko Jaurlaritza</h2>
+            <p><strong>Hasiera data:</strong> 2024/01/01</p>
+            <p><strong>Amaitze data:</strong> 2024/12/31</p>
+            <p><strong>Kontratua:</strong> F</p>
+            <p><strong>Deskribapena:</strong> Lan-taldearen teknikarien inplanteazioa eta formakuntza</p>
+            <img src="img/logo-gobierno-vasco.jpg" alt="logo-gobierno-vasco">
+        </div>
+    </div>
+    
+
+
+
+
+
+<div class="kontenidorea">
+ <div class="guretzat-kontenidorea">
+    <div class="txartela" style="background-image: url('/OrekaIT/img/oficinadonosti.jpg')">
+        <div class="testuak">
+            <h3>Donostiako bulego berria </h3>
+        </div>
+    </div>
+    <div class="txartela" style="background-image: url('/OrekaIT/img/plantillaa.jpg')">
+        <div class="testuak">
+            <h3>Plantilla: 150 baino konsultore gehiago ditugu</h3>
+        </div>
+    </div>
+    <div class="txartela" style="background-image: url('/OrekaIT/img/etekin.jpg')">
+        <div class="testuak">
+           
+        </div>
     </div>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>Enpresaren Helbidea: Industria Kalea, 123, 45678 Hiria, Herrialdea</p>
-            <p>Kontakturako Telefonoa: +34 123 456 789</p>
+    <div class="txartela" style="background-image: url('/OrekaIT/img/practicas.jpg')">
+        <div class="testuak">
+            <h3>Praktikak</h3>
+            <p>Hasieratik profesional baten eskutik prestatu</p>
         </div>
+    </div>
+    <div >
+    <div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </footer>
 
-</body>
-
-</html>
+        <footer>
+            <div class="oinarriak-kontainerra">
+                <div class="oinarriak-zutabea">
+                    <h3>Webgunea</h3>
+                    <!-- INDEZUA EZKERREAN BESTE HTML ORRIRAKO -->
+                    <ul>
+                        <li><a href="hasiera.html" target="_blank">Hasiera</a></li>
+                        <li><a href="guri.html" target="_blank">Guri buruz</a></li>
+                        <li><a href="kontaktua.html" target="_blank">Kontaktua</a></li>
+                        <li><a href="produktuak.html" target="_blank">Produktuak</a></li> 
+                    </ul>
+                    </div>
+                    
+                    <div class="oinarrizkoZutabea">
+                        <!-- ERDIALDEKO ZUTABEA -->
+                        <h3>Helbidea</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Zumar Hiribidea, Gasteiz </li>
+                            <li><i class="fas fa-phone"></i> Telefono zenbakia: 123456789</li>
+                            <li><i class="fas fa-envelope"></i> Posta elektronikoa: oreka@oreka.eus</li>
+                        </ul>
+                    </div>
+                    <div class="oinarrizkoZutabea">
+                        <!-- ESKUINERAKO ZUTABEA -->
+                        <h3>Gure webguneko ahalmen maila</h3>
+                        <div class="bilkura">
+                            <a class="osoongi"><img src="img/osoongi.jpg" alt=""></a>
+                            <a  class="arrunt"><img src="img/arrunt.jpg" alt=""></a>
+                            <a  class="on"><img src="img/on.jpg" alt=""></a>
+                            <a  class="osoon"><img src="img/osoon.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <!-- &copy: es el símbolo de copyright  -->
+                    <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
+                </div>
+            
+            </footer>

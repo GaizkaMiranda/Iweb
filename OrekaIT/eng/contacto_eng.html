@@ -3,17 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catastor Industries - Contact</title>
+    <title>Oreka IT - Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
+
+<header>
+    <div class="first"> <!--PARENT-->
+        <div class="one-one"> <!--CHILD No.1-->
+            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+        </div>
+        
+        <div class="one-two">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products/Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="language-switch">
+                        <select class="language-switch" onchange="location = this.value;">
+                            <option value="index.html">Spanish</option>
+                            <option value="eus/index_eus.html">Basque</option>
+                            <option value="eng/index_eng.html">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
 <body>
 
-    <header>
-        <!-- Company logo and title -->
-    </header>
 
     <nav class="navbar">
         <!-- Navigation menu -->
@@ -23,10 +49,10 @@
         <h2>Contact</h2>
         <div class="contact-info">
             <!-- Contact information -->
-            <p><strong>Address:</strong> Main Street, 123, City, Country</p>
+            <p><strong>Address:</strong> Guachupa Street, 14, Vitoria-Gasteiz, Basque Country</p>
             <p><strong>Phone:</strong> +34 123 456 789</p>
-            <p><strong>Email:</strong> info@catastor.com</p>
-            <p><strong>Opening Hours:</strong> Monday to Friday: 9:00 AM - 5:00 PM</p>
+            <p><strong>Email:</strong> info@orekait.com</p>
+            <p><strong>Hours:</strong> Monday to Friday: 8:00 AM - 6:00 PM</p>
         </div>
 
         <div class="contact-form">
@@ -35,30 +61,82 @@
             <form action="send_message.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
-
+        
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br>
-
+        
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone"><br>
-
+        
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br>
+        
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-
+        
                 <input type="submit" value="Send">
             </form>
         </div>
+        
 
-        <div class="map-container">
-            <!-- Location map -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        
     </div>
 
-    <footer class="site-footer">
-        <!-- Additional footer information -->
-    </footer>
-
-</body>
-
-</html>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <h3>Website</h3>
+                <!-- INDEX TO THE LEFT THAT LEADS TO OTHER HTML PAGES -->
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="products.html" target="_blank">Products</a></li> 
+                </ul>
+            </div>
+            
+            <div class="footerColumn">
+                <!-- MIDDLE COLUMN -->
+                <h3>Address</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Industry Street, Vitoria-Gasteiz </li>
+                    <li><i class="fas fa-phone"></i> Phone Number: +34 123 456 789</li>
+                    <li><i class="fas fa-envelope"></i> Email: oreka@oreka.eus</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <!-- RIGHT COLUMN -->
+                <h3>Satisfaction Level with Our Website</h3>
+                <div class="satisfaction">
+                    <a class="verybad"> <img src
+                        <a  class="regular"><img src="img/regular.jpg" alt="regular" ></a>
+                        <a  class= "bien" ><img src="img/bien.jpg" alt="bien"></a>
+                        <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <!-- &copy: es el símbolo de copyright  -->
+                <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
+            </div>
+        
+        </footer>
+        
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var form = document.querySelector('.contact-form form');
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevenir el envío del formulario por defecto
+                    // Aquí puedes agregar cualquier lógica adicional, como enviar los datos del formulario a un servidor mediante AJAX
+                    // Por ahora, simplemente mostraremos un mensaje de agradecimiento
+                    alert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo pronto.');
+                    form.reset(); // Limpiar el formulario después de enviar
+                });
+            });
+        </script>
+        
+    
+    </body>
+    
+    </html>

@@ -3,62 +3,140 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catastor Industries - Harremanak</title>
+    <title>Oreka IT- Kontaktua</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
+
+<header>
+    <div class="lehenengo"> <!-- AITA -->
+        <div class="bat-bat"> <!-- HAURRA No.1-->
+            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+        </div>
+        
+        <div class="bat-bi">
+            <nav class="nabigazioa">
+                <ul class="nabigazio-estekak">
+                    <li><a href="index.html">Hasi</a></li>
+                    <li><a href="guri.html">Guri buruz</a></li>
+                    <li><a href="produktuak.html">Produktuak/Szerbitzuak</a></li>
+                    <li><a href="kontaktua.html">Kontaktua</a></li>
+
+                    <li class="hizkuntza-aldaketa">
+                        <select class="hizkuntza-aldaketa" onchange="location = this.value;">
+                            <option value="index.html">Gaztelania</option>
+                            <option value="eus/index_eus.html">Euskara</option>
+                            <option value="eng/index_eng.html">Ingelesa</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
 <body>
 
-    <header>
-        <!-- Enpresaren logoa eta izenburua -->
-    </header>
 
-    <nav class="navbar">
-        <!-- Nabigazio menua -->
+    <nav class="nabigazioa">
+        <!-- Navigazio menua -->
     </nav>
 
-    <div class="central">
-        <h2>Harremanak</h2>
-        <div class="contact-info">
-            <!-- Harremanetarako informazioa -->
-            <p><strong>Helbidea:</strong> Nagusia Kalea, 123, Hiria, Herrialdea</p>
+    <div class="erdi">
+        <h2>Kontaktua</h2>
+        <div class="kontaktua-informazioa">
+            <!-- Kontaktu informazioa -->
+            <p><strong>Helbidea:</strong> Guachupa Kalea, 14, Vitoria-Gasteiz, Euskal Herria</p>
             <p><strong>Telefonoa:</strong> +34 123 456 789</p>
-            <p><strong>Emaila:</strong> info@catastor.com</p>
-            <p><strong>Ordutegia:</strong> Astelehenetik Ostiralera: 9:00 - 17:00</p>
+            <p><strong>Emaila:</strong> info@orekait.com</p>
+            <p><strong>Ordutegia:</strong> Astelehenetik ostiralera: 8:00etatik - 18:00etara</p>
         </div>
 
-        <div class="contact-form">
-            <!-- Harremanetarako formularioa -->
-            <h3>Mezua bidali</h3>
-            <form action="bidali_meza.php" method="post">
+        <div class="kontaktua-inprimakia">
+            <!-- Kontaktu inprimakia -->
+            <h3>Bidali mezua</h3>
+            <form action="mezua_bidali.php" method="post">
                 <label for="izena">Izena:</label>
                 <input type="text" id="izena" name="izena" required><br>
-
+        
                 <label for="emaila">Emaila:</label>
                 <input type="email" id="emaila" name="emaila" required><br>
-
+        
                 <label for="telefonoa">Telefonoa:</label>
                 <input type="tel" id="telefonoa" name="telefonoa"><br>
-
+        
+                <label for="jaiotze-data">Jaiotze data:</label>
+                <input type="date" id="jaiotze-data" name="jaiotze-data" required><br>
+        
                 <label for="mezua">Mezua:</label><br>
                 <textarea id="mezua" name="mezua" rows="4" cols="50" required></textarea><br>
-
+        
                 <input type="submit" value="Bidali">
             </form>
         </div>
+        
 
-        <div class="map-container">
-            <!-- Kokapen mapa -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        
     </div>
 
-    <footer class="site-footer">
-        <!-- Oin-piezaren informazioa gehigarria -->
+    <footer>
+        <div class="oinarriak-kontainerra">
+            <div class="oinarriak-zutabea">
+                <h3>Webgunea</h3>
+                <!-- INDEZUA EZKERREAN BESTE HTML ORRIRAKO -->
+                <ul>
+                    <li><a href="hasiera.html" target="_blank">Hasiera</a></li>
+                    <li><a href="guri.html" target="_blank">Guri buruz</a></li>
+                    <li><a href="kontaktua.html" target="_blank">Kontaktua</a></li>
+                    <li><a href="produktuak.html" target="_blank">Produktuak</a></li> 
+                </ul>
+            </div>
+            
+            <div class="oinarriak-zutabea">
+                <!-- ERDIALDEKO ZUTABEA -->
+                <h3>Helbidea</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Zumar Hiribidea, Vitoria-Gasteiz </li>
+                    <li><i class="fas fa-phone"></i> Telefono zenbakia: 123456789</li>
+                    <li><i class="fas fa-envelope"></i> Emaila: oreka@oreka.eus</li>
+                </ul>
+            </div>
+            <div class="oinarriak-zutabea">
+                <!-- ESNE KOLUMNA -->
+                <h3>Gure Webgunearekin duzun pozikuntasun maila</h3>
+                <div class="pozikuntasuna">
+                    <a class="zoriontsua"> <img src="img/zoriontsua.jpg" alt="zoriontsua"></a>
+                    <a  class="ohikoa"><img src="img/ohikoa.jpg" alt="ohikoa" ></a>
+                    <a  class= "on" ><img src="img/on.jpg" alt="on"></a>
+                    <a  class="zoriontsuagoa"><img src="img/zoriontsuagoa.jpg" alt="zoriontsuagoa"></a>
+                </div>
+            </div>
+        </div>
+        <div class="kopyrighta">
+            <!-- &copy: bostekoa baimenaren ikurra  -->
+            <small>&copy;2024 <b> Oreka IT</b> - Oreka IT webgune ofiziala</small>
+        </div>
+    
     </footer>
+    
 
-</body>
-
-</html>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector('.kontaktua-inprimakia form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Formularioa berezko bidalketa saihestu
+                // Hemen gehitu dezakezu beste logika bat, adibidez formularioaren datuak AJAX bidez zerbitzari batera bidaltzea
+                    // Por ahora, simplemente mostraremos un mensaje de agradecimiento
+                    alert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo pronto.');
+                    form.reset(); // Limpiar el formulario después de enviar
+                });
+            });
+        </script>
+        
+    
+    </body>
+    
+    </html>

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Oreka IT - SAP Products</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
 <header>
-    <div class="primero"> <!--PARENT-->
-        <div class="unouno"> <!--CHILD No.1-->
+    <div class="first"> <!-- PARENT -->
+        <div class="child1"> <!-- CHILD NO.1 -->
             <a href="index.html"><img src="/OrekaIT/img/logo.png" alt="logo" width="300" height="50"></a>
         </div>
         
-        <div class="unodos">
+        <div class="child2">
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
                     <li><a href="products.html">Products/Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="language-switch">
@@ -36,37 +36,97 @@
 </header>
 
 <body>
-    <div class="central">
+    <div class="center">
         <h2>Our SAP Products</h2>
         <div class="product-list">
             <div class="product">
                 <h3>SAP S/4HANA</h3>
-                <p>The SAP S/4HANA enterprise management suite offers integrated functionalities of finance, sales, inventory management, and more, all in a single real-time platform.</p>
-                <img src="img/s4hana.jpg" alt="SAP S/4HANA">
+                <p>The SAP S/4HANA enterprise management suite offers integrated functionalities for finance, sales, inventory management, and more, all on a single real-time platform.</p>
+                <a href="S4HANA.html">
+                    <img src="img/s4hana.jpg" alt="SAP S/4HANA">
+                </a>
             </div>
             <div class="product">
                 <h3>SAP SuccessFactors</h3>
-                <p>SAP SuccessFactors is a human capital management solution that helps organizations recruit, develop, and manage their workforce effectively.</p>
-                <img src="img/successfactors.jpg" alt="SAP SuccessFactors">
-            </div>
-            <div class="product">
-                <h3>SAP Business One</h3>
-                <p>SAP Business One is an ERP system designed specifically for small and medium-sized enterprises, integrating key functions such as finance, sales, purchasing, and inventory management.</p>
-                <img src="img/SAP B1.png.jpg" alt="SAP Business One">
+                <p>SAP SuccessFactors is a human capital management solution that helps organizations effectively recruit, develop, and manage their workforce.</p>
+                <a href="SAPSF.html">
+                    <img src="img/success factors.png" alt="SAP SuccessFactors">
+                </a>
             </div>
             
-            <!-- Add more products here -->
+            <div class="product">
+                <h3>SAP Business One</h3>
+                <p>SAP Business One is an ERP system specifically designed for small and medium-sized businesses, integrating key functions such as finance, sales, purchasing, and inventory management.</p>
+                <img src="img/SAP B1.png" alt="SAP Business One">
+            </div>
         </div>
+
     </div>
+    <img src="img/background.png" alt="Background" class="background">
+    <section id="our-services">
+        <div class="container">
+            <h2 class="our-services">Our Services</h2>
+            <div class="programs">
+                <div class="card">
+                    <h3 class="implementation">Implementation</h3>
+                    <p>We focus on understanding our clients' business processes to be able to implement them on an optimized and tailored SAP S/4 HANA or SAP B1 system. We also handle system installation, change management, user training, and data migration.</p>
+                    <a href="https://orekait.com/vias-4hana-servicio-de-implantacion-y-conversion-a-sap-s-4hana/">+ Info (original website)</a>
+                </div>
+                <div class="card">
+                    <h3 class="maintenance">Maintenance</h3>
+                    <p>We offer our clients long-term support for the maintenance of their SAP systems and the training of their work team. Our maintenance service is certified under ISO 20000-1, and we provide our own software for incident management.</p>
+                    <a href="https://orekait.com/blog/customer-experience-planes-de-mantenimiento-de-sap-sevice-cloud/">+ Info (original website)</a>
+                </div>
+                <div class="card">
+                    <h3 class="training">Training</h3>
+                    <p>We help our clients' work teams get the most out of their SAP system, updating and improving their knowledge through customized courses.</p>
+                    <a href="https://orekait.com/clientes-y-referencias/">+ Info (original website)</a>
+                </div>  
+            </div>
+        </div>
+    </section> 
 </body>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>Company Address: Industry Street, 123, 45678 City, Country</p>
-        <p>Contact Phone: +34 123 456 789</p>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerColumn">
+            <h3>Website</h3>
+            <!-- INDEX LEADS TO OTHER HTML PAGES -->
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="about_us.html" target="_blank">About Us</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="products.html" target="_blank">Products</a></li> 
+            </ul>
+        </div>
+        
+        <div class="footerColumn">
+            <!-- MIDDLE COLUMN -->
+            <h3>Address</h3>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Zumar Hiribidea, Vitoria-Gasteiz </li>
+                <li><i class="fas fa-phone"></i> Phone Number: 123456789</li>
+                <li><i class="fas fa-envelope"></i> Email: oreka@oreka.eus</li>
+            </ul>
+        </div>
+        <div class="footerColumn">
+            <!-- RIGHT COLUMN -->
+            <h3>Website Satisfaction Level</h3>
+            <div class="satisfaction">
+                <a class="very-poor"> <img src="img/very-poor.jpg" alt=""></a>
+                <a  class="regular"><img src="img/regular.jpg" alt=""></a>
+                <a  class="good"><img src="img/good.jpg" alt=""></a>
+                <a  class="very-good"><img src="img/very-good.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <!-- &copy is the copyright symbol -->
+        <small>&copy;2024 <b> Oreka IT</b> - Official Oreka IT Page</small>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </footer>
+
 
 </html>

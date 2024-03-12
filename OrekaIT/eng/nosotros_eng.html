@@ -1,79 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Oreka IT</title>
+    <title>Oreka IT- About Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
-<body>
-    <header>
-        <img src="img/logo.jpg" alt="OrekaIT">
-    </header>
+<header>
+    <div class="first"> <!--PARENT-->
+        <div class="one-one"> <!--CHILD Nº1-->
+            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+        </div>
+        
+        <div class="one-two">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="products.html">Products/Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="products.html">Products/Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="language-switch">
-                <select class="language-switch" onchange="location = this.value;">
-                    <option value="index.html">Español</option>
-                    <option value="index_eus.html">Euskera</option>
-                    <option value="index_eng.html">English</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
+                    <li class="language-switch">
+                        <select class="language-switch" onchange="location = this.value;">
+                            <option value="index.html">Spanish</option>
+                            <option value="eus/index_eus.html">Basque</option>
+                            <option value="eng/index_eng.html">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<body>    
+
+    <!-- In the "About Us" section -->
+    <div class="availability">
+        <h2>Availability</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Opening Time</th>
+                <th>Closing Time</th>
+                <th>Details</th>
+            </tr>
+            <tr class="table-content">
+                <td>Monday-Wednesday</td>
+                <td>7:00</td>
+                <td>18:00</td>
+                <td><a href="project_a.html">View details</a></td>
+            </tr>
+            <tr class="table-content">
+                <td>Thursday</td>
+                <td>7:30</td>
+                <td>18:00</td>
+                <td><a href="project_b.html">View details</a></td>
+            </tr>
+            <tr class="table-content">
+                <td>Friday</td>
+                <td>8:00</td>
+                <td>15:00</td>
+                <td><a href="project_c.html">View details</a></td>
+            </tr>
+        
+        </table>
+    </div>
     
 
-    <!-- In the "About us" section -->
-<div class="central">
-    <h2>Projects</h2>
-    <table>
-        <tr>
-            <th>Project Name</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Details</th>
-        </tr>
-        <tr>
-            <td>Project A</td>
-            <td>01/01/2024</td>
-            <td>31/12/2024</td>
-            <td><a href="project_a.html">View details</a></td>
-        </tr>
-        <!-- Add more rows for more projects -->
-    </table>
-</div>
 
-<!-- Project details page (project_a.html) -->
-<div class="central">
-    <h2>Project A Details</h2>
-    <p><strong>Start Date:</strong> 01/01/2024</p>
-    <p><strong>End Date:</strong> 31/12/2024</p>
-    <p><strong>Client:</strong> Mercedes</p>
-    <p><strong>Description:</strong> Detailed description of the project...</p>
-    <!-- Add more detailed project information -->
-</div>
-
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>Company Address: Main Street, 123, 45678 City, Country</p>
-            <p>Contact Phone: +34 123 456 789</p>
+    <div class="projects-container">
+        <div class="col1">
+            <h2>Mercedes Project</h2>
+            <p><strong>Start Date:</strong> 01/01/2023</p>
+            <p><strong>End Date:</strong> 01/12/2024</p>
+            <p><strong>Contract:</strong> A</p>
+            <p><strong>Description:</strong> SAP implementation for company expense and production management</p>
+            <img src="img/mercedes.jpg" alt="mercedes">
         </div>
+        <div class="col2">
+            <h2>Kaiku Project</h2>
+            <p><strong>Start Date:</strong> 01/01/2020</p>
+            <p><strong>End Date:</strong> 31/01/2022</p>
+            <p><strong>Contract:</strong> B+</p>
+            <p><strong>Description:</strong> SAP Business One implementation and maintenance for two years</p>
+            <img src="img/Kaiku_Logo.png" alt="Kaiku">
+        </div>
+        <div class="col1">
+            <h2>Basque Government</h2>
+            <p><strong>Start Date:</strong> 01/01/2024</p>
+            <p><strong>End Date:</strong> 31/12/2024</p>
+            <p><strong>Contract:</strong> F</p>
+            <p><strong>Description:</strong> Implementation and technical training of staff</p>
+            <img src="img/logo-gobierno-vasco.jpg" alt="basque-government-logo">
+        </div>
+    </div>
+    
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </footer>
 
-</body>
+
+
+
+<div class="container">
+ <div class="about-us-container">
+    <div class="card" style="background-image: url('/OrekaIT/img/donostioffice.jpg')">
+        <div class="texts">
+            <h3>New office in Donostia </h3>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('/OrekaIT/img/staff.jpg')">
+        <div class="texts">
+            <h3>Staff: we have a team of over 150 consultants</h3>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('/OrekaIT/img/profits.jpg')">
+        <div class="texts">
+           
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('/OrekaIT/img/internship.jpg')">
+        <div class="texts">
+            <h3>Internship</h3>
+            <p>Start from scratch with a professional</p>
+        </div>
+    </div>
+    <div >
+    <div>
+
+
+        <footer>
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <h3>Web</h3>
+                    <!-- INDEX TO THE LEFT THAT LEADS TO OTHER HTML PAGES -->
+                    <ul>
+                        <li><a href="home.html" target="_blank">Home</a></li>
+                        <li><a href="about_us.html" target="_blank">About Us</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                        <li><a href="products.html" target="_blank">Products</a></li> 
+                    </ul>
+                </div>
+                
+                <div class="footerColumn">
+                    <!-- MIDDLE COLUMN -->
+                    <h3>Address</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Zumar Street, Vitoria-Gasteiz </li>
+                        <li><i class="fas fa-phone"></i> Phone number: 123456789</li>
+                        <li><i class="fas fa-envelope"></i> Email: oreka@oreka.eus</li>
+                    </ul>
+                </div>
+                <div class="footerColumn">
+                    <!-- COLUMNA DE LA DERECHA -->
+                    <h3>Nivel de satisfacción con nuestra web</h3>
+                    <div class="satisfaccion">
+                        <a class="muymal"> <img src="img/muymal.jpg" alt=""></a>
+                        <a  class="regular"><img src="img/regular.jpg" alt=""></a>
+                        <a  class="bien"><img src="img/bien.jpg" alt=""></a>
+                        <a  class="muybien"><img src="img/muybien.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <!-- &copy: es el símbolo de copyright  -->
+                <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
+            </div>
+        
+        </footer>
+        
+
 
 </html>

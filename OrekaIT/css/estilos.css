@@ -41,6 +41,8 @@ img {
     display: block; /* Hace que las etiquetas de formulario sean bloques para ocupar todo el ancho */
     margin-bottom: 5px; /* Agrega espacio entre etiquetas y campos */
     font-size: 25px;
+    border: 1px solid #030303; /* Ajusta el grosor del borde a 1px */
+    padding: 20px; /* Añade un espacio interno alrededor del contenido */
 }
 
 .form_checkbox_container {
@@ -333,7 +335,10 @@ H22 S4HANA{
 .cv {
     color: #030303; /* Cambia el color del texto a negro */
     font-size: 28px; /* Ajusta el tamaño de fuente a tu preferencia */
+   
 }
+
+
 
 
 
@@ -518,6 +523,7 @@ button:hover {
     justify-content: center; /* Centra horizontalmente los proyectos */
     align-items: center; /* Centra verticalmente los proyectos */
     gap: 20px; /* Espacio entre los proyectos */
+    margin-bottom: 50px;
 }
 
 .cl1,
@@ -650,3 +656,46 @@ footer {
   img {
     max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
   }
+
+
+
+
+  /* Estilos para la tabla de proyectos */
+  .disponibilidad {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    max-width: 100%; /* La tabla ocupará el ancho máximo posible */
+    width: 80%; /* Tamaño relativo de la tabla */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/009/751/175/non_2x/blue-background-dark-blue-abstract-background-geometry-shine-and-layer-element-for-presentation-design-free-vector.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    padding: 20px; /* Espacio interno para evitar que el contenido se superponga a la imagen de fondo */
+    margin-bottom: 50px; /* Espacio debajo de la tabla */
+}
+
+.disponibilidad h2 {
+    margin-top: 50px; /* Espacio superior para el título */
+    margin-bottom: 20px; /* Espacio inferior para el título */
+    color: white; /* Color del texto del título */
+}
+
+.contenidotabla {
+    color: white;
+}
+
+.disponibilidad table {
+    width: 100%; /* La tabla ocupa todo el ancho disponible */
+    border-collapse: separate; /* Se separan los bordes de las celdas */
+    border-spacing: 10px; /* Espacio entre las celdas */
+}
+
+.disponibilidad th,
+.disponibilidad td {
+    padding: 10px; /* Espacio interno de las celdas */
+    text-align: center; /* Centra el contenido horizontalmente */
+    border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+.disponibilidad th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}

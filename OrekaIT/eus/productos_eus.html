@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,23 +10,23 @@
 </head>
 
 <header>
-    <div class="primero"> <!--PADRE-->
-        <div class="unouno"> <!--HIJO Nº1-->
+    <div class="lehenengo"> <!-- AITA -->
+        <div class="bata"> <!-- LEHENENGO SEMEA -->
             <a href="index.html"><img src="/OrekaIT/img/logo.png" alt="logo" width="300" height="50"></a>
         </div>
         
-        <div class="unodos">
+        <div class="bigarren">
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html">Hasiera</a></li>
-                    <li><a href="nosotros.html">Guri buruz</a></li>
-                    <li><a href="productos.html">Produktu/Serbitzuak</a></li>
-                    <li><a href="contacto.html">Kontaktua</a></li>
+                    <li><a href="guri-buruz.html">Guri buruz</a></li>
+                    <li><a href="produktuak.html">Produktuak/Zerbitzuak</a></li>
+                    <li><a href="kontaktua.html">Kontaktua</a></li>
                     <li class="language-switch">
                         <select class="language-switch" onchange="location = this.value;">
-                            <option value="index.html">Español</option>
-                            <option value="index_eus.html" selected>Euskera</option>
-                            <option value="index_eng.html">English</option>
+                            <option value="index.html">Gaztelania</option>
+                            <option value="index_eus.html">Euskara</option>
+                            <option value="index_eng.html">Ingelesa</option>
                         </select>
                     </li>
                 </ul>
@@ -36,36 +36,96 @@
 </header>
 
 <body>
-    <div class="central">
+    <div class="zentrala">
         <h2>Gure SAP Produktuak</h2>
-        <div class="product-list">
-            <div class="product">
+        <div class="produktu-lista">
+            <div class="produktua">
                 <h3>SAP S/4HANA</h3>
-                <p>SAP S/4HANA enpresen kudeaketa suitea eskaintzen du, finantzak, salmentak, inventarioen kudeaketa eta gehio integrazioa duen plataforma bakar batean, denbora errealean.</p>
-                <img src="img/s4hana.jpg" alt="SAP S/4HANA">
+                <p>SAP S/4HANA enpresaren kudeaketaren suitak finantzak, salmentak, inventario kudeaketa eta gehiago integra ditu, dena une bateko plataforma batean erreal denboran.</p>
+                <a href="S4HANA.html">
+                    <img src="img/s4hana.jpg" alt="SAP S/4HANA">
+                </a>
             </div>
-            <div class="product">
+            <div class="produktua">
                 <h3>SAP SuccessFactors</h3>
-                <p>SAP SuccessFactors enpresen erabilgarritasuna ziurtatzeko pertsonal kapitala kudeatzen laguntzen duen soluzio bat da, erakundeek efektiboki langileak biltzeko, garatzea eta kudeatzeko.</p>
-                <img src="img/successfactors.jpg" alt="SAP SuccessFactors">
+                <p>SAP SuccessFactors gizarte-kapitalaren kudeaketa soluzioa da, erakundeek langileak erabiltzaileen erakuntza, garapena eta kudeaketa eraginkorra egiteko laguntzen duena.</p>
+                <a href="SAPSF.html">
+                    <img src="img/success factors.png" alt="SAP SuccessFactors">
+                </a>
             </div>
-            <div class="product">
+            
+            <div class="produktua">
                 <h3>SAP Business One</h3>
-                <p>SAP Business One erabilgarri den ERP sistema bat da, txikien eta ertain enpresentzat diseinatua, finantzak, salmentak, erosketak eta inventarioen kudeaketako funtzio garrantzitsuak integratzen dituena.</p>
-                <img src="img/businessone.jpg" alt="SAP Business One">
+                <p>SAP Business One ERP sistema txikien eta ertainentzat diseinatua da, finantzak, salmentak, erosketak eta inventario kudeaketa funtzio garrantzitsuekin integratua.</p>
+                <img src="img/SAP B1.png" alt="SAP Business One">
             </div>
-            <!-- Gehitu produktu gehiago hemen -->
         </div>
+
     </div>
+    <img src="img/fondo.png" alt="Hondoa" class="fondo">
+    <section id="gure-zerbitzuak">
+        <div class="kontainerra">
+            <h2 class="gure-zerbitzuak">Gure Zerbitzuak</h2>
+            <div class="programak">
+                <div class="karta">
+                    <h3 class="implantazioa">Implantazioa</h3>
+                    <p>Bezeroen negozio-prozesuak ulertzeko ardu egiten gara, hauen beharretara egokitutako eta optimizatutako SAP S/4 HANA edo SAP B1 sistemak inplementatzeko. Sistemak instalatzeaz, aldaketa kudeaketaz, erabiltzaileei prestakuntzaz eta datuen migratzeaz ere arduratzen gara.</p>
+                    <a href="https://orekait.com/vias-4hana-servicio-de-implantacion-y-conversion-a-sap-s-4hana/">+ Informazioa (jatorrizko webgunea)</a>
+                </div>
+                <div class="karta">
+                    <h3 class="mantentzea">Mantentzea</h3>
+                    <p>Zerbitzuak mantentzeko eta langileen prestakuntzarako laguntasun luzera ematen diogu bezeroei. Gure mantentze-zerbitzua ISO 20000-1 baimendua dago, eta gure baliabideak erabiltzen ditugu incidentzien kudeaketarako softwarea eskaintzeko.</p>
+                    <a href="https://orekait.com/blog/customer-experience-planes-de-mantenimiento-de-sap-sevice-cloud/">+ Informazioa (jatorrizko webgunea)</a>
+                </div>
+                <div class="karta">
+                    <h3 class="prestakuntza">Prestakuntza</h3>
+                    <p>Bezeroen lantaldeak SAP sistema haietan aurrezteko errendimendu handiagoa lortzen lagunduko diegu, ikastaro pertsonalizatuak bidez beren ezaguerak eguneratuz eta hobetuz.</p>
+                    <a href="https://orekait.com/clientes-y-referencias/">+ Informazioa (jatorrizko webgunea)</a>
+                </div>  
+            </div>
+        </div>
+    </section>
 </body>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>Enpresaren Helbidea: Industria Kalea, 123, 45678 Hiria, Herrialdea</p>
-        <p>Kontaktuko Telefonoa: +34 123 456 789</p>
+<footer>
+    <div class="oinarriKoadroa">
+        <div class="oinarriZutabea">
+            <h3>Web</h3>
+            <!-- EZKERREKO MENUA ORRI HTML EZBERDINETARA ERAMAN</a> -->
+            <ul>
+                <li><a href="hasiera.html" target="_blank">Hasiera</a></li>
+                <li><a href="guri-buruz.html" target="_blank">Guri buruz</a></li>
+                <li><a href="kontaktua.html" target="_blank">Kontaktua</a></li>
+                <li><a href="produktuak.html" target="_blank">Produktuak</a></li> 
+            </ul>
+        </div>
+        
+        <div class="oinarriZutabea">
+            <!-- ERDIALDEKO ZUTABEA -->
+            <h3>Helbidea</h3>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Zumar Hiribidea, Vitoria-Gasteiz </li>
+                <li><i class="fas fa-phone"></i> Telefono zenbakia: 123456789</li>
+                <li><i class="fas fa-envelope"></i> Posta elektronikoa: oreka@oreka.eus</li>
+            </ul>
+        </div>
+        <div class="oinarriZutabea">
+            <!-- ESKUINEKO ZUTABEA -->
+            <h3>Gure webgunearekin duzun pozikuntasun maila</h3>
+            <div class="pozikuntasuna">
+                <a class="osoOkerra"> <img src="img/muymal.jpg" alt=""></a>
+                <a  class="normala"><img src="img/normala.jpg" alt=""></a>
+                <a  class="ona"><img src="img/ona.jpg" alt=""></a>
+                <a  class="osoOna"><img src="img/osoOna.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="kopyrighta">
+        <!-- &copy: Copyright ikurra -->
+        <small>&copy;2024 <b> Oreka IT</b> - Oreka IT orri ofiziala</small>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </footer>
+
 
 </html>

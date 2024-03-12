@@ -19,14 +19,15 @@
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html">Hasiera</a></li>
-                    <li><a href="nosotros.html">Guri buruz</a></li>
-                    <li><a href="productos.html">Produktu/Serbitzuak</a></li>
+                    <li><a href="nosotros.html">Gu</a></li>
+                    <li><a href="productos.html">Produktu-serbitzuak</a></li>
                     <li><a href="contacto.html">Kontaktua</a></li>
+
                     <li class="language-switch">
                         <select class="language-switch" onchange="location = this.value;">
-                            <option value="index.html">Español</option>
-                            <option value="index_euskera.html">Euskera</option>
-                            <option value="index_eng.html">English</option>
+                            <option value="index.html">Gaztelania</option>
+                            <option value="eus/index_eus.html">Euskera</option>
+                            <option value="eng/index_eng.html">Ingelesa</option>
                         </select>
                     </li>
                 </ul>
@@ -38,70 +39,114 @@
 <!-- C:\Users\Hezitzaile\Desktop\Workspace\OrekaIT\img -->
 <body>
     
-
-    
-    
-
-    <div class="central">
+    <div class="central19">
         
-        <p> Aqui tu zona central</p>
-
-        <p> Aqui tu zona central</p>
-
-        <p> Aqui tu zona central</p>
-
-        <p> Aqui tu zona central</p>
+        <img src="img/IntarexOreka.png" alt="IntarexOreka">
 
     </div>
 
+    <div class="contenedorinicio">
+        <div class="contenido contenedor">
+          <p>Gure produktu SAP-ek enpresa eragileak eta enpresen kudeaketa perfektua da. 2010ean sortu zen, enpresaren hainbat arlo funtzionale integratzeko helburuarekin: finantzak, kontabilitatea, giza baliabideak, fabrikazioa, salmenta, banaketa, eta gehiago, sistema batera biltzeko helburuarekin. Fundada en 2010 para integrar diversas áreas funcionales de una empresa, como finanzas, contabilidad, recursos humanos, fabricación, ventas, distribución, y más, en un solo sistema centralizado.</p>
+          <img src="img/productos-propios.png" alt="productos-propios">
+          <p><strong> Oreka ITek garatuta</strong></p>
+
+        </div>
+      </div>
   
+    <div class="fondoformulario">
+       
+        <h2 class="cv">¿Oreka ITren parte izan nahi duzu? 
+            Zure Cva bidali ezazu </h2>
+       
+    
+        <div class="form-container">
+            <form action="/submit_form" method="post" class="form_form">
+                <label for="Telefono" class="telefono">Kontaktua:</label>
+                <input type="tel" id="nombre" name="nombre" class="form_input"><br><br>
+    
+                <label for="suscripcion" class="privacidad">Oreka IT-ren pribatutasun politika onartzen dut </label>
+                <div class="form_checkbox_container">
+                    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
+                </div>
+    
+    
+                <label for="dep" class="depart">Saila:</label>
+                <select id="dep" name="dep" class="form_select">
+                    <option value="sis">Sistemak</option>
+                    <option value="B1">Business One</option>
+                    <option value="An">Analytics</option>
+                    <option value="DH">Data Hunting</option>
+                    <option value="Ad">Administrazioa</option>
+                    <option value="RRHH">Giza baliabideak</option>
+                </select><br><br>
+    
+                <label for="Comentario" class="coment">Komentarioa:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea><br><br>
+    
+                <label for="pdf" class="adjuntar">Txertatu PDF:</label>
+                <input type="file" id="pdf" name="pdf" class="form_input"><br><br>
+    
+                <input type="submit" value="Bidali" class="form_submit">
+            </form>
+        </div>
+    
+    </div>
 
-
-<h2>Orekaren parte izan nahi duzu?</h2>
-<h2>Zure CV bidali</h2>
-
-<form action="/submit_form" method="post" >
-    <label for="Telefono">Telefono zenbakia:</label>
-    <input type="text" id="nombre" name="nombre"><br><br>
+    <footer class="site-footer">
+        <div class="container">
+            <p>Enpresaren helbidea: Zumar kalea, 123, 45678 Ciudad, País</p>
+            <p>Telefono zenbakia: +34 123 456 789</p>
+        </div>
     
-    <label for="suscripcion">Harpidetu boletinera:</label>
-    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si"><br><br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe> 
     
-    
-    
-    <label for="dep">Saila:</label>
-    <select id="dep" name="dep">
-        <option value="sis">Sistemak</option>
-        <option value="B1">Business One</option>
-        <option value="An">Analytics</option>
-        <option value="DH">Data Hunting</option>
-        <option value="Ad">Administrazioa</option>
-        <option value="RRHH">Giza baliabideak</option>
-    </select><br><br>
-    
-    <label for="Comentario">Iruzkina:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
-    
-    <label for="pdf">PDF Erantsi:</label>
-    <input type="file" id="pdf" name="pdf"><br><br>
-
-    <input type="submit" value="Bidali">
-</form>
+       
 
 </body>
-
-<footer class="site-footer">
-    <div class="container">
-        <p>Enpresa helbidea: Calle de la Industria, 123, 45678 Ciudad, País</p>
-        <p>Teléfono de Contacto: +34 123 456 789</p>
+<footer>
+    <div class="footerContainer">
+        <div class="footerColumn">
+            <h3>Web orria</h3>
+            <!-- ÍNDICE DA LA IZQ QUE LLEVA A OTRAS PÁGINAS HTML -->
+            <ul>
+                <li><a href="inicio.html" target="_blank">Hasiera</a></li>
+                <li><a href="info.html" target="_blank">Gu</a></li>
+                <li><a href="contacto.html" target="_blank">Kontaktua</a></li>
+                <li><a href="productos.html" target="_blank">Produktuak</a></li> 
+            </ul>
+        </div>
+        
+        <div class="footerColumn">
+            <!-- COLUMNA DEL MEDIO -->
+            <h3>Helbidea</h3>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Zumar Hiribidea, Vitoria-Gasteiz </li>
+                <li><i class="fas fa-phone"></i> Telefono zenbakia: 123456789</li>
+                <li><i class="fas fa-envelope"></i> Mail helbidea: oreka@oreka.eus</li>
+            </ul>
+        </div>
+        <div class="footerColumn">
+            <!-- COLUMNA DE LA DERECHA -->
+            <h3>Gure webgunearekin asebetetze maila</h3>
+            <div class="satisfaccion">
+                <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
+                <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
+                <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
+                <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <!-- &copy: es el símbolo de copyright  -->
+        <small>&copy;2024 <b> Oreka IT</b> - Oreka IT web ofiziala</small>
     </div>
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-
 </footer>
+
 
 </html>
