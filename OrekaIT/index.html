@@ -36,7 +36,6 @@
     </div>
 </header>
 
-<!-- C:\Users\Hezitzaile\Desktop\Workspace\OrekaIT\img -->
 <body>
     
     <div class="central19">
@@ -62,8 +61,6 @@
     
         <div class="form-container">
             <form action="/submit_form" method="post" class="form_form">
-                <label for="Telefono" class="telefono">Teléfono de contacto:</label>
-                <input type="tel" id="nombre" name="nombre" class="form_input"><br><br>
     
                 <label for="suscripcion" class="privacidad">Acepto la política de privacidad de Oreka IT </label>
                 <div class="form_checkbox_container">
@@ -99,7 +96,7 @@
             <p>Teléfono de Contacto: +34 123 456 789</p>
         </div>
     
-        <iframe
+        <iframe class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
             width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
@@ -139,6 +136,20 @@
                 <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
                 <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
             </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
         </div>
     </div>
     <div class="copyright">

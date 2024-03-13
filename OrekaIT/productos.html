@@ -114,11 +114,25 @@
             <!-- COLUMNA DE LA DERECHA -->
             <h3>Nivel de satisfacción con nuestra web</h3>
             <div class="satisfaccion">
-                <a class="muymal"> <img src="img/muymal.jpg" alt=""></a>
-                <a  class="regular"><img src="img/regular.jpg" alt=""></a>
-                <a  class="bien"><img src="img/bien.jpg" alt=""></a>
-                <a  class="muybien"><img src="img/muybien.jpg" alt=""></a>
+                <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
+                <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
+                <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
+                <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
             </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
         </div>
     </div>
     <div class="copyright">

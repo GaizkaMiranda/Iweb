@@ -49,10 +49,10 @@
         <h2>Contacto</h2>
         <div class="contact-info">
             <!-- Información de contacto -->
-            <p><strong>Dirección:</strong> Calle Guachupa, 14, Vitoria-Gasteiz, Euskal herria</p>
+            <p><strong>Dirección:</strong> Zumar Hiribidea, Vitoria-Gasteiz , Euskal herria</p>
             <p><strong>Teléfono:</strong> +34 123 456 789</p>
-            <p><strong>Correo Electrónico:</strong> info@orekait.com</p>
-            <p><strong>Horario:</strong> Lunes a Viernes: 8:00 - 18:00</p>
+            <p><strong>Correo Electrónico:</strong> oreka@orekait.com</p>
+            
         </div>
 
         <div class="contact-form">
@@ -109,10 +109,24 @@
                 <h3>Nivel de satisfacción con nuestra web</h3>
                 <div class="satisfaccion">
                     <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
-                    <a  class="regular"><img src="img/regular.jpg" alt="regular" ></a>
-                    <a  class= "bien" ><img src="img/bien.jpg" alt="bien"></a>
+                    <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
+                    <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
                     <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
                 </div>
+                <script>
+                    // Obtener todas las imágenes
+                    const imagenes = document.querySelectorAll('.satisfaccion img');
+            
+                    // Función para mostrar el mensaje
+                    function mostrarMensaje() {
+                        alert("Gracias por tu valoración");
+                    }
+            
+                    // Agregar evento de clic a cada imagen
+                    imagenes.forEach(imagen => {
+                        imagen.addEventListener('click', mostrarMensaje);
+                    });
+                </script>
             </div>
         </div>
         <div class="copyright">

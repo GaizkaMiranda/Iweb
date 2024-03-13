@@ -34,7 +34,9 @@ img {
 
 .form_form {
     margin-top: 20px; /* Agrega margen superior al formulario */
+    width: calc(100% - 40px); /* Ancho proporcional al contenedor con márgenes */
 }
+
 
 .privacidad , .depart, .coment, .adjuntar, .telefono{
     color: #000407;
@@ -43,6 +45,7 @@ img {
     font-size: 25px;
     border: 1px solid #030303; /* Ajusta el grosor del borde a 1px */
     padding: 20px; /* Añade un espacio interno alrededor del contenido */
+   
 }
 
 .form_checkbox_container {
@@ -321,6 +324,15 @@ H22 S4HANA{
             margin-top: 3rem;
 }
 
+.tit4hana {
+    color: #000407;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+}
+
+
 
 .cta S4HANA{
     display: inline-block;
@@ -383,7 +395,7 @@ H22 S4HANA{
 }
 
 .contact-form {
-    background-color: #e251a1; /* Color de fondo suave */
+    background-color:#9b0d59; /* Color de fondo suave */
     padding: 20px; /* Espacio alrededor del formulario */
     border-radius: 10px; /* Bordes redondeados */
 }
@@ -554,7 +566,7 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0.92;   /* le ajustamos la transparencia */
+        
 }
 
 
@@ -698,4 +710,18 @@ footer {
 
 .disponibilidad th {
     background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}
+
+
+
+.mapa {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Ajusta el tamaño del mapa según sea necesario */
+    height: 450px; /* Establece la altura fija del mapa */
+}
+
+.form-container {
+    margin-right: 20px; /* Margen a la derecha */
+    margin-bottom: 20px; /* Margen por debajo */
 }

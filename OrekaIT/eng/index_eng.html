@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Oreka IT</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
@@ -15,7 +15,7 @@
             <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
         </div>
         
-        <div class="one-two">
+        <div class="unodos">
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -38,22 +38,22 @@
 
 <body>
     
-    <div class="center19">
+    <div class="central19">
         
-        <img src="img/IntarexOreka.png" alt="IntarexOreka">
+        <img src="../img/IntarexOreka.png" alt="IntarexOreka">
 
     </div>
 
-    <div class="container-home">
-        <div class="content container">
+    <div class="contenedorinicio">
+        <div class="contenido contenedor">
           <p>Our SAP product is the perfect business software for managing commercial operations and company administration. Founded in 2010 to integrate various functional areas of a company, such as finance, accounting, human resources, manufacturing, sales, distribution, and more, into a single centralized system.</p>
-          <img src="img/own-products.png" alt="own-products">
+          <img src="img/productos-propios.png" alt="productos-propios">
           <p><strong>Developed by Oreka IT</strong></p>
 
         </div>
       </div>
   
-    <div class="background-form">
+    <div class="fondoformulario">
        
         <h2 class="cv">Want to be part of Oreka IT? 
             Send us your CV </h2>
@@ -64,7 +64,7 @@
                 <label for="telephone" class="telephone">Contact phone:</label>
                 <input type="tel" id="telephone" name="telephone" class="form_input"><br><br>
     
-                <label for="subscription" class="privacy">I accept Oreka IT's privacy policy</label>
+                <label for="subscription" class="privacidad">I accept Oreka IT's privacy policy</label>
                 <div class="form_checkbox_container">
                     <input type="checkbox" id="subscription" name="subscription" value="Yes" class="form_checkbox">
                 </div>
@@ -98,7 +98,7 @@
             <p>Contact Phone: +34 123 456 789</p>
         </div>
     
-        <iframe
+        <iframe class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
             width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
@@ -132,6 +132,34 @@
         <div class="footerColumn">
             <!-- RIGHT COLUMN -->
             <h3>Satisfaction Level with Our Website</h3>
-            <div class="satisfaction">
-                <a class="verybad"> <img src="img/muymal.jpg" alt="muymal"></a>
-                <a 
+            <div class="satisfaccion">
+                <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
+                <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
+                <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
+                <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
+            </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
+        </div>
+    </div>
+    <div class="copyright">
+        <!-- &copy: es el símbolo de copyright  -->
+        <small>&copy;2024 <b> Oreka IT</b> - Oreka IT oficial website</small>
+    </div>
+
+</footer>
+
+
+</html>
