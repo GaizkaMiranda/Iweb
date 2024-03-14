@@ -18,16 +18,16 @@
         <div class="unodos">
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="index.html">Hasiera</a></li>
-                    <li><a href="nosotros.html">Gu</a></li>
-                    <li><a href="productos.html">Produktu-serbitzuak</a></li>
-                    <li><a href="contacto.html">Kontaktua</a></li>
+                    <li><a href="../eus/index_eus.html">Hasiera</a></li>
+                    <li><a href="../eus/nosotros_eus.html">Gu</a></li>
+                    <li><a href="../eus/productos_eus.html">Produktu-zerbitzuak</a></li>
+                    <li><a href="../eus/contacto_eus.html">Kontaktua</a></li>
 
                     <li class="language-switch">
                         <select class="language-switch" onchange="location = this.value;">
-                            <option value="index.html">Gaztelania</option>
-                            <option value="eus/index_eus.html">Euskera</option>
-                            <option value="eng/index_eng.html">Ingelesa</option>
+                            <option value="../index.html">Gaztelania</option>
+                            <option value="../eus/index_eus.html">Euskera</option>
+                            <option value="../eng/index_eng.html">Ingelesa</option>
                         </select>
                     </li>
                 </ul>
@@ -48,7 +48,7 @@
     <div class="contenedorinicio">
         <div class="contenido contenedor">
           <p>Gure produktu SAP-ek enpresa eragileak eta enpresen kudeaketa perfektua da. 2010ean sortu zen, enpresaren hainbat arlo funtzionale integratzeko helburuarekin: finantzak, kontabilitatea, giza baliabideak, fabrikazioa, salmenta, banaketa, eta gehiago, sistema batera biltzeko helburuarekin. Fundada en 2010 para integrar diversas áreas funcionales de una empresa, como finanzas, contabilidad, recursos humanos, fabricación, ventas, distribución, y más, en un solo sistema centralizado.</p>
-          <img src="img/productos-propios.png" alt="productos-propios">
+          <img src="../img/productos-propios.png" alt="productos-propios">
           <p><strong> Oreka ITek garatuta</strong></p>
 
         </div>
@@ -99,7 +99,7 @@
             <p>Telefono zenbakia: +34 123 456 789</p>
         </div>
     
-        <iframe
+        <iframe class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.90667641658!2d-2.6547893232915705!3d42.87481387114963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc303b3ac189b%3A0x461f863cfcbb2878!2sOreka%20IT!5e0!3m2!1ses!2ses!4v1709372130691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
             width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
@@ -134,16 +134,30 @@
             <!-- COLUMNA DE LA DERECHA -->
             <h3>Gure webgunearekin asebetetze maila</h3>
             <div class="satisfaccion">
-                <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
-                <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
-                <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
-                <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
+                <a class="muymal"> <img src="../img/muymal.jpg" alt="muymal"></a>
+                <a  class="regular"><img src="../img/regular.jpg" alt="regular"></a>
+                <a  class="bien"><img src="../img/bien.jpg" alt="bien"></a>
+                <a  class="muybien"><img src="../img/muybien.jpg" alt="muybien"></a>
             </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
         </div>
     </div>
     <div class="copyright">
         <!-- &copy: es el símbolo de copyright  -->
-        <small>&copy;2024 <b> Oreka IT</b> - Oreka IT web ofiziala</small>
+        <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
     </div>
 
 </footer>

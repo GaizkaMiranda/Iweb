@@ -43,26 +43,26 @@
                 <h3>SAP S/4HANA</h3>
                 <p>The SAP S/4HANA enterprise management suite offers integrated functionalities for finance, sales, inventory management, and more, all on a single real-time platform.</p>
                 <a href="S4HANA.html">
-                    <img src="img/s4hana.jpg" alt="SAP S/4HANA">
+                    <img src="../img/s4hana.jpg" alt="SAP S/4HANA">
                 </a>
             </div>
             <div class="product">
                 <h3>SAP SuccessFactors</h3>
                 <p>SAP SuccessFactors is a human capital management solution that helps organizations effectively recruit, develop, and manage their workforce.</p>
                 <a href="SAPSF.html">
-                    <img src="img/success factors.png" alt="SAP SuccessFactors">
+                    <img src="../img/success factors.png" alt="SAP SuccessFactors">
                 </a>
             </div>
             
             <div class="product">
                 <h3>SAP Business One</h3>
                 <p>SAP Business One is an ERP system specifically designed for small and medium-sized businesses, integrating key functions such as finance, sales, purchasing, and inventory management.</p>
-                <img src="img/SAP B1.png" alt="SAP Business One">
+                <img src="../img/SAP B1.png" alt="SAP Business One">
             </div>
         </div>
 
     </div>
-    <img src="img/background.png" alt="Background" class="background">
+    <img src="../img/background.png" alt="Background" class="background">
     <section id="our-services">
         <div class="container">
             <h2 class="our-services">Our Services</h2>
@@ -119,11 +119,25 @@
                 <a  class="good"><img src="img/good.jpg" alt=""></a>
                 <a  class="very-good"><img src="img/very-good.jpg" alt=""></a>
             </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
         </div>
     </div>
     <div class="copyright">
-        <!-- &copy is the copyright symbol -->
-        <small>&copy;2024 <b> Oreka IT</b> - Official Oreka IT Page</small>
+        <!-- &copy: es el símbolo de copyright  -->
+        <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
     </div>
 
 </footer>

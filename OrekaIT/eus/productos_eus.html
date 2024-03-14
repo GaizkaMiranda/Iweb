@@ -118,11 +118,25 @@
                 <a  class="ona"><img src="img/ona.jpg" alt=""></a>
                 <a  class="osoOna"><img src="img/osoOna.jpg" alt=""></a>
             </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
         </div>
     </div>
-    <div class="kopyrighta">
-        <!-- &copy: Copyright ikurra -->
-        <small>&copy;2024 <b> Oreka IT</b> - Oreka IT orri ofiziala</small>
+    <div class="copyright">
+        <!-- &copy: es el símbolo de copyright  -->
+        <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
     </div>
 
 </footer>

@@ -41,7 +41,7 @@
 <body>    
 
     <!-- In the "About Us" section -->
-    <div class="availability">
+    <div class="disponibilidad">
         <h2>Availability</h2>
         <table>
             <tr>
@@ -50,23 +50,23 @@
                 <th>Closing Time</th>
                 <th>Details</th>
             </tr>
-            <tr class="table-content">
+            <tr class="contenidotabla">
                 <td>Monday-Wednesday</td>
                 <td>7:00</td>
                 <td>18:00</td>
-                <td><a href="project_a.html">View details</a></td>
+                <td><a href="proyecto_a.html">View details</a></td>
             </tr>
-            <tr class="table-content">
+            <tr class="contenidotabla">
                 <td>Thursday</td>
                 <td>7:30</td>
                 <td>18:00</td>
-                <td><a href="project_b.html">View details</a></td>
+                <td><a href="proyecto_b.html">View details</a></td>
             </tr>
-            <tr class="table-content">
+            <tr class="contenidotabla">
                 <td>Friday</td>
                 <td>8:00</td>
                 <td>15:00</td>
-                <td><a href="project_c.html">View details</a></td>
+                <td><a href="proyecto_c.html">View details</a></td>
             </tr>
         
         </table>
@@ -75,13 +75,13 @@
 
 
     <div class="projects-container">
-        <div class="col1">
+        <div class="cl1">
             <h2>Mercedes Project</h2>
             <p><strong>Start Date:</strong> 01/01/2023</p>
             <p><strong>End Date:</strong> 01/12/2024</p>
             <p><strong>Contract:</strong> A</p>
             <p><strong>Description:</strong> SAP implementation for company expense and production management</p>
-            <img src="img/mercedes.jpg" alt="mercedes">
+            <img src="../img/mercedes.jpg" alt="mercedes">
         </div>
         <div class="col2">
             <h2>Kaiku Project</h2>
@@ -89,7 +89,7 @@
             <p><strong>End Date:</strong> 31/01/2022</p>
             <p><strong>Contract:</strong> B+</p>
             <p><strong>Description:</strong> SAP Business One implementation and maintenance for two years</p>
-            <img src="img/Kaiku_Logo.png" alt="Kaiku">
+            <img src="../img/Kaiku_Logo.png" alt="Kaiku">
         </div>
         <div class="col1">
             <h2>Basque Government</h2>
@@ -97,7 +97,7 @@
             <p><strong>End Date:</strong> 31/12/2024</p>
             <p><strong>Contract:</strong> F</p>
             <p><strong>Description:</strong> Implementation and technical training of staff</p>
-            <img src="img/logo-gobierno-vasco.jpg" alt="basque-government-logo">
+            <img src="../img/logo-gobierno-vasco.jpg" alt="basque-government-logo">
         </div>
     </div>
     
@@ -106,8 +106,8 @@
 
 
 
-<div class="container">
- <div class="about-us-container">
+<div class="contenedor">
+ <div class="contenedor-nosotros">
     <div class="card" style="background-image: url('/OrekaIT/img/donostioffice.jpg')">
         <div class="texts">
             <h3>New office in Donostia </h3>
@@ -160,11 +160,25 @@
                     <!-- COLUMNA DE LA DERECHA -->
                     <h3>Nivel de satisfacción con nuestra web</h3>
                     <div class="satisfaccion">
-                        <a class="muymal"> <img src="img/muymal.jpg" alt=""></a>
-                        <a  class="regular"><img src="img/regular.jpg" alt=""></a>
-                        <a  class="bien"><img src="img/bien.jpg" alt=""></a>
-                        <a  class="muybien"><img src="img/muybien.jpg" alt=""></a>
+                        <a class="muymal"> <img src="../img/muymal.jpg" alt=""></a>
+                        <a  class="regular"><img src="../img/regular.jpg" alt=""></a>
+                        <a  class="bien"><img src="../img/bien.jpg" alt=""></a>
+                        <a  class="muybien"><img src="../img/muybien.jpg" alt=""></a>
                     </div>
+                    <script>
+                        // Obtener todas las imágenes
+                        const imagenes = document.querySelectorAll('.satisfaccion img');
+                
+                        // Función para mostrar el mensaje
+                        function mostrarMensaje() {
+                            alert("Gracias por tu valoración");
+                        }
+                
+                        // Agregar evento de clic a cada imagen
+                        imagenes.forEach(imagen => {
+                            imagen.addEventListener('click', mostrarMensaje);
+                        });
+                    </script>
                 </div>
             </div>
             <div class="copyright">
@@ -174,6 +188,6 @@
         
         </footer>
         
-
-
-</html>
+        
+        </html>
+        
