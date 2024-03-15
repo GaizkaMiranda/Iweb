@@ -11,20 +11,20 @@
 
 
 <header>
-    <div class="lehenengo"> <!-- AITA -->
-        <div class="bat-bat"> <!-- HAURRA No.1-->
+    <div class="primero"> 
+        <div class="unouno"> 
             <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
         </div>
         
-        <div class="bat-bi">
-            <nav class="nabigazioa">
-                <ul class="nabigazio-estekak">
-                    <li><a href="index.html">Hasi</a></li>
-                    <li><a href="guri.html">Guri buruz</a></li>
-                    <li><a href="produktuak.html">Produktuak/Szerbitzuak</a></li>
-                    <li><a href="kontaktua.html">Kontaktua</a></li>
+        <div class="unodos">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index_eus.html">Hasi</a></li>
+                    <li><a href="nosotros_eus.html">Guri buruz</a></li>
+                    <li><a href="productos_eus.html">Produktu/Serbitzuak</a></li>
+                    <li><a href="contacto_eus.html">Kontaktua</a></li>
 
-                    <li class="hizkuntza-aldaketa">
+                    <li class="language-switch">
                         <select class="hizkuntza-aldaketa" onchange="location = this.value;">
                             <option value="./contacto.html">Español</option>
                             <option value="./eus/contacto_eus.html">Euskera</option>
@@ -41,13 +41,13 @@
 <body>
 
 
-    <nav class="nabigazioa">
+    <nav class="navbar">
         <!-- Navigazio menua -->
     </nav>
 
-    <div class="erdi">
+    <div class="central">
         <h2>Kontaktua</h2>
-        <div class="kontaktua-informazioa">
+        <div class="contact-info">
             <!-- Kontaktu informazioa -->
             <p><strong>Helbidea:</strong> Guachupa Kalea, 14, Vitoria-Gasteiz, Euskal Herria</p>
             <p><strong>Telefonoa:</strong> +34 123 456 789</p>
@@ -55,24 +55,24 @@
             <p><strong>Ordutegia:</strong> Astelehenetik ostiralera: 8:00etatik - 18:00etara</p>
         </div>
 
-        <div class="kontaktua-inprimakia">
+        <div class="contact-form">
             <!-- Kontaktu inprimakia -->
             <h3>Bidali mezua</h3>
             <form action="mezua_bidali.php" method="post">
                 <label for="izena">Izena:</label>
-                <input type="text" id="izena" name="izena" required><br>
+                <input type="text" id="izena" name="izena" required>
         
                 <label for="emaila">Emaila:</label>
-                <input type="email" id="emaila" name="emaila" required><br>
+                <input type="email" id="emaila" name="emaila" required>
         
                 <label for="telefonoa">Telefonoa:</label>
-                <input type="tel" id="telefonoa" name="telefonoa"><br>
+                <input type="tel" id="telefonoa" name="telefonoa">
         
                 <label for="jaiotze-data">Jaiotze data:</label>
-                <input type="date" id="jaiotze-data" name="jaiotze-data" required><br>
+                <input type="date" id="jaiotze-data" name="jaiotze-data" required>
         
-                <label for="mezua">Mezua:</label><br>
-                <textarea id="mezua" name="mezua" rows="4" cols="50" required></textarea><br>
+                <label for="mezua">Mezua:</label>
+                <textarea id="mezua" name="mezua" rows="4" cols="50" required></textarea>
         
                 <input type="submit" value="Bidali">
             </form>
@@ -83,40 +83,54 @@
     </div>
 
     <footer>
-        <div class="oinarriak-kontainerra">
-            <div class="oinarriak-zutabea">
+        <div class="footerContainer">
+            <div class="footerColumn">
                 <h3>Webgunea</h3>
-                <!-- INDEZUA EZKERREAN BESTE HTML ORRIRAKO -->
+                <!-- ÍNDICE DA LA IZQ QUE LLEVA A OTRAS PÁGINAS HTML -->
                 <ul>
-                    <li><a href="hasiera.html" target="_blank">Hasiera</a></li>
-                    <li><a href="guri.html" target="_blank">Guri buruz</a></li>
-                    <li><a href="kontaktua.html" target="_blank">Kontaktua</a></li>
-                    <li><a href="produktuak.html" target="_blank">Produktuak</a></li> 
+                    <li><a href="inicio.html" target="_blank">Hasi</a></li>
+                    <li><a href="info.html" target="_blank">Gu</a></li>
+                    <li><a href="contacto.html" target="_blank">Kontaktua</a></li>
+                    <li><a href="productos.html" target="_blank">Produktu-serbitzuak</a></li> 
                 </ul>
             </div>
             
-            <div class="oinarriak-zutabea">
-                <!-- ERDIALDEKO ZUTABEA -->
+            <div class="footerColumn">
+                <!-- COLUMNA DEL MEDIO -->
                 <h3>Helbidea</h3>
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i> Zumar Hiribidea, Vitoria-Gasteiz </li>
-                    <li><i class="fas fa-phone"></i> Telefono zenbakia: 123456789</li>
-                    <li><i class="fas fa-envelope"></i> Emaila: oreka@oreka.eus</li>
+                    <li><i class="fas fa-phone"></i> Zenbakia: 123456789</li>
+                    <li><i class="fas fa-envelope"></i> Korreoa: oreka@oreka.eus</li>
                 </ul>
             </div>
-            <div class="oinarriak-zutabea">
-                <!-- ESNE KOLUMNA -->
-                <h3>Gure Webgunearekin duzun pozikuntasun maila</h3>
-                <div class="pozikuntasuna">
-                    <a class="zoriontsua"> <img src="img/zoriontsua.jpg" alt="zoriontsua"></a>
-                    <a  class="ohikoa"><img src="img/ohikoa.jpg" alt="ohikoa" ></a>
-                    <a  class= "on" ><img src="img/on.jpg" alt="on"></a>
-                    <a  class="zoriontsuagoa"><img src="img/zoriontsuagoa.jpg" alt="zoriontsuagoa"></a>
+            <div class="footerColumn">
+                <!-- COLUMNA DE LA DERECHA -->
+                <h3>Gogobetasuna gure webgunearekin</h3>
+                <div class="satisfaccion">
+                    <a class="muymal"> <img src="../img/muymal.jpg" alt="muymal"></a>
+                    <a  class="regular"><img src="../img/regular.jpg" alt="regular"></a>
+                    <a  class="bien"><img src="../img/bien.jpg" alt="bien"></a>
+                    <a  class="muybien"><img src="../img/muybien.jpg" alt="muybien"></a>
                 </div>
+                <script>
+                    // Obtener todas las imágenes
+                    const imagenes = document.querySelectorAll('.satisfaccion img');
+            
+                    // Función para mostrar el mensaje
+                    function mostrarMensaje() {
+                        alert("Gracias por tu valoración");
+                    }
+            
+                    // Agregar evento de clic a cada imagen
+                    imagenes.forEach(imagen => {
+                        imagen.addEventListener('click', mostrarMensaje);
+                    });
+                </script>
             </div>
         </div>
-        <div class="kopyrighta">
-            <!-- &copy: bostekoa baimenaren ikurra  -->
+        <div class="copyright">
+            <!-- &copy: es el símbolo de copyright  -->
             <small>&copy;2024 <b> Oreka IT</b> - Oreka IT webgune ofiziala</small>
         </div>
     
@@ -125,18 +139,18 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var form = document.querySelector('.kontaktua-inprimakia form');
+            var form = document.querySelector('.contact-form form');
             form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Formularioa berezko bidalketa saihestu
-                // Hemen gehitu dezakezu beste logika bat, adibidez formularioaren datuak AJAX bidez zerbitzari batera bidaltzea
-                    // Por ahora, simplemente mostraremos un mensaje de agradecimiento
-                    alert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo pronto.');
-                    form.reset(); // Limpiar el formulario después de enviar
-                });
+                event.preventDefault(); // Prevenir el envío del formulario por defecto
+                // Aquí puedes agregar cualquier lógica adicional, como enviar los datos del formulario a un servidor mediante AJAX
+                // Por ahora, simplemente mostraremos un mensaje de agradecimiento
+                alert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo pronto.');
+                form.reset(); // Limpiar el formulario después de enviar
             });
-        </script>
-        
+        });
+    </script>
     
-    </body>
-    
-    </html>
+
+</body>
+
+</html>

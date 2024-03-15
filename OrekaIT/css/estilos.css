@@ -5,9 +5,11 @@ body {
     margin: 0; /* Elimina los márgenes predeterminados */
     padding: 0; /* Elimina el relleno predeterminado */
     font-family: 'Roboto', sans-serif; /* Establece la fuente predeterminada */
+    display: flex;
+    flex-direction: column;
 }
 
-/* dfsdjfhsd kjfhsdkfhsdkjfh*/
+
 
 header {
     text-align: center;
@@ -17,6 +19,7 @@ header {
 img {
     max-width: 100%;
     height: auto;
+    max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
 }
 
 /* Estilos básicos */
@@ -54,9 +57,6 @@ img {
     margin-bottom: 10px; /* Agrega espacio entre la fila del checkbox y otros elementos */
 }
 
-.form_checkbox {
-    margin-right: 5px; /* Agrega margen derecho al checkbox */
-}
 
 .form_input,
 .form_select,
@@ -66,11 +66,6 @@ img {
     margin-bottom: 10px; /* Agrega espacio entre campos */
     box-sizing: border-box; /* Hace que el relleno y el borde no aumenten el tamaño total del campo */
 }
-
-.form_submit {
-    width: auto; /* Establece el ancho automático del botón de envío */
-}
-
 
 .form_submit:hover {
     background-color: #ff1493;
@@ -149,10 +144,7 @@ html, body {
     margin: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
+
 
 body > .container {
     flex: 1;
@@ -219,14 +211,6 @@ body > .container {
 }
 
 
-/* imagen */
-/* .logo {
-
-} */
-
-
-
-/* PADRE */
 .primero {
     position: relative; /* Establece la posición relativa */
 }
@@ -319,11 +303,6 @@ H22 S4HANA{
     font-size: 1.4rem;
 }
 
-.cta S4HANA{
-    text-align: center;
-            margin-top: 3rem;
-}
-
 .tit4hana {
     color: #000407;
     display: flex;
@@ -335,6 +314,8 @@ H22 S4HANA{
 
 
 .cta S4HANA{
+    text-align: center;
+    margin-top: 3rem;
     display: inline-block;
             background-color: #037bc0;
             color: #fff;
@@ -346,13 +327,8 @@ H22 S4HANA{
 
 .cv {
     color: #030303; /* Cambia el color del texto a negro */
-    font-size: 28px; /* Ajusta el tamaño de fuente a tu preferencia */
-   
+    font-size: 28px; /* Ajusta el tamaño de fuente a tu preferencia */ 
 }
-
-
-
-
 
 .form_input {
     padding: 8px;
@@ -364,6 +340,7 @@ H22 S4HANA{
 }
 
 .form_checkbox {
+    margin-right: 5px; /* Agrega margen derecho al checkbox */
     margin-top: 5px;
     
 }
@@ -386,6 +363,7 @@ H22 S4HANA{
 }
 
 .form_submit {
+    width: auto; /* Establece el ancho automático del botón de envío */
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -573,6 +551,7 @@ button:hover {
 /* ----- FOOTER(común) ----- */
 
 footer {
+    width: 100%; 
     background-color: #9b0d59; /* Cambia el color de fondo a rosa */
     color: white; /* Cambia el color del texto a blanco */
     padding: 50px 0;
@@ -665,12 +644,6 @@ footer {
     margin: auto; /* Centrar horizontalmente */
   }
   
-  img {
-    max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
-  }
-
-
-
 
   /* Estilos para la tabla de proyectos */
   .disponibilidad {
@@ -725,3 +698,10 @@ footer {
     margin-right: 20px; /* Margen a la derecha */
     margin-bottom: 20px; /* Margen por debajo */
 }
+
+
+input {
+    display: block; /* Hace que cada elemento ocupe su propia línea */
+    margin-bottom: 10px; /* Agrega un margen en la parte inferior de cada elemento */
+  }
+
